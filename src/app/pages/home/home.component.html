@@ -1,39 +1,5 @@
 <!-- Hero Section with Rotating Services -->
 <section class="hero-section">
-  <!-- <div class="container">
-    <div class="hero-content">
-      <div class="rotating-services-container">
-        <div class="company-logo">
-          <h1 class="company-name">Finspire</h1>
-          <p class="company-tagline">Software Solutions</p>
-        </div>
-        
-        <div class="services-wrapper" #servicesWrapper>
-          <div class="service" *ngFor="let service of services" (click)="navigate(service.link)"
-              (mouseenter)="hoveredService = service" (mouseleave)="hoveredService = null"
-              [class.hovered]="hoveredService === service" tabindex="0" role="button"
-              [attr.aria-label]="service.ariaLabel">
-              <div class="service-icon">
-                <i [class]="service.icon"></i>
-              </div>
-              <span class="service-name">{{ service.name }}</span>
-          </div>
-        </div>
-      </div>
-      
-      <div class="hero-text">
-        <h2 class="hero-title">Smart Water Solutions For a Healthier Lifestyle</h2>
-        <p class="hero-description">
-         We offer high-efficiency water purification systems engineered
-          to remove impurities, chemicals, and contaminants. Enjoy consistent clean water and long-lasting performance backed by expert support.
-        </p>
-        <div class="hero-actions">
-          <a routerLink="/services" class="btn btn-primary">Explore Services</a>
-          <a routerLink="/contact-us" class="btn btn-outline">Get In Touch</a>
-        </div>
-      </div>
-      </div>
-  </div> -->
   <section class="hero-section">
     <!-- Animated Water Background -->
     <div class="background-effects">
@@ -148,7 +114,7 @@
     </div>
   </section>
 </section>
-
+<app-products></app-products>
 <!-- Services Preview Section -->
 <section class="section services-preview">
   <div class="section-header">
@@ -239,31 +205,7 @@
     </div>
   </div>
 </section>
-<!-- Works Preview Section -->
-<!-- <section class="section section-dark works-preview">
-  <div class="container">
-    <h2 class="section-title">Our Recent Works</h2>
-    <p class="section-subtitle">Showcasing our latest projects and achievements</p>
 
-    <div class="works-grid">
-      <div class="work-card" *ngFor="let work of works">
-        <div class="work-image">
-          <div class="work-placeholder">
-            <img [src]="work.image" [alt]="work.title">
-          </div>
-        </div>
-        <div class="work-content">
-          <h3 class="work-title">{{work.title}}</h3>
-          <span class="work-category">{{work.category}}</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="section-action">
-      <a routerLink="/our-works" class="btn btn-primary">View All Works</a>
-    </div>
-  </div>
-</section> -->
 <app-recent-projects></app-recent-projects>
 <!-- About Preview Section -->
 <app-client-review></app-client-review>

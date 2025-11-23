@@ -1,0 +1,41 @@
+<section class="products-section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Our Products</h2>
+      <p class="section-subtitle">Discover our range of high-quality water purification systems</p>
+    </div>
+
+    <div class="products-grid">
+      <div class="product-item" *ngFor="let product of products" (click)="sendToWhatsApp(product)">
+        <div class="product-image">
+          <img [src]="product.image" [alt]="product.name">
+          
+          <div class="whatsapp-icon">
+            <i class="fab fa-whatsapp"></i>
+          </div>
+          
+          <div class="product-overlay">
+            <h3 class="product-title">{{ product.name }}</h3>
+            
+            <div class="product-details">
+              <div class="detail-row">
+                <span class="detail-label">Capacity:</span>
+                <span class="detail-value">{{ product.capacity }}</span>
+              </div>
+              
+              <div class="detail-row">
+                <span class="detail-label">Filter Time:</span>
+                <span class="detail-value">{{ product.filterTime }}</span>
+              </div>
+              
+              <div class="detail-row" *ngIf="product.price">
+                <span class="detail-label">Price:</span>
+                <span class="detail-value">{{ product.price }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

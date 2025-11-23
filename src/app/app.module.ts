@@ -23,6 +23,7 @@ import { LoaderComponent } from './shared/loader/loader.component';
 import { LoaderInterceptor } from './shared/loader/loader.interceptor';
 import { ClientReviewComponent } from './pages/client-review/client-review.component';
 import { RecentProjectsComponent } from './pages/recent-projects/recent-projects.component';
+import { ProductsComponent } from './pages/products/products.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { RecentProjectsComponent } from './pages/recent-projects/recent-projects
     LoginComponent,
     ToastContainerComponent,
     ClientReviewComponent,
-    RecentProjectsComponent
+    RecentProjectsComponent,
+    ProductsComponent
     
   ],
   imports: [

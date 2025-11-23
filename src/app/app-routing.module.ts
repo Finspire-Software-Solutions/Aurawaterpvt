@@ -20,6 +20,7 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'admin', component: AdminComponent, canActivate: [AuthGuard] },
   { path: 'blog/:slug', component: BlogComponent },
+  { path: 'our-works/:slug', component: OurWorksComponent },
   { path: '**', redirectTo: '' },
 ];
 
