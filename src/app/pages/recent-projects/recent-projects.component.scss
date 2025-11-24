@@ -1,21 +1,32 @@
 // Variables
-$primary-color: #0891b2;
-$primary-dark: #0e7490;
-$primary-light: #22d3ee;
-$cyan-50: #ecfeff;
-$cyan-100: #cffafe;
-$text-dark: #1e293b;
-$text-gray: #64748b;
-$text-light: #94a3b8;
-$border-color: #e2e8f0;
-$bg-light: #f8fafc;
-$white: #ffffff;
+// Primary Brand Colors
+$primary-gold: #FFD700;        // Pure gold
+$primary-gold-dark: #DAA520;   // Darker gold (goldenrod)
+$primary-gold-light: #FFF4C4;  // Light gold/cream
+
+// Metallic Colors
+$silver: #C0C0C0;              // Silver
+$silver-dark: #A9A9A9;         // Dark silver
+$silver-light: #E8E8E8;        // Light silver/metallic
+
+$black: #000000;               // Pure black
+$text-dark: #1a1a1a;           // Softer black for text
+$text-gray: #4a4a4a;           // Dark gray for secondary text
+
+$white: #ffffff;               // Pure white
+$off-white: #fafafa;           // Off-white for backgrounds
+
+// Accent & UI Colors
+$gold-accent: #e08e00;         // Orange-gold accent
+$metallic-shine: #d4d4d4;      // For metallic effects
+$border-color: #e5e5e5;        // Light border
+$bg-light: #f5f5f5;            // Light background
 
 // Category Colors
-$commercial-color: #0891b2;
-$residential-color: #10b981;
-$industrial-color: #f59e0b;
-$institutional-color: #8b5cf6;
+$category-gold: #FFD700;
+$category-silver: #C0C0C0;
+$category-black: #2d2d2d;
+$category-white: #ffffff;
 
 // Section
 .recent-projects-section {
@@ -41,15 +52,17 @@ $institutional-color: #8b5cf6;
   align-items: center;
   gap: 0.5rem;
   padding: 0.5rem 1rem;
-  background: $cyan-100;
+  background: $primary-gold-light;
   border-radius: 9999px;
-  color: $primary-dark;
+  color: $text-dark;
   font-size: 0.875rem;
   font-weight: 600;
   margin-bottom: 1rem;
+  border: 1px solid $primary-gold;
 
   i {
     font-size: 0.75rem;
+    color: $primary-gold;
   }
 }
 
@@ -60,7 +73,7 @@ $institutional-color: #8b5cf6;
   margin: 0 0 1rem 0;
 
   @media (min-width: 768px) {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 
@@ -87,23 +100,24 @@ $institutional-color: #8b5cf6;
 
 .filter-btn {
   padding: 0.625rem 1.25rem;
-  border: 2px solid $border-color;
+  border: 1px solid $silver;
   background: $white;
   color: $text-gray;
   font-size: 0.9375rem;
   font-weight: 500;
-  border-radius: 9999px;
+  border-radius: 15px;
   cursor: pointer;
   transition: all 0.3s ease;
 
   &:hover {
-    border-color: $primary-color;
-    color: $primary-color;
+    border-color: $primary-gold;
+    color: $text-dark;
+    background: $primary-gold-light;
   }
 
   &.active {
-    background: $primary-color;
-    border-color: $primary-color;
+    background: $primary-gold;
+    border-color: $primary-gold-dark;
     color: $white;
   }
 }
@@ -129,13 +143,14 @@ $institutional-color: #8b5cf6;
   background: $white;
   border-radius: 1rem;
   overflow: hidden;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px -1px rgba($black, 0.1);
   border: 1px solid $border-color;
   transition: all 0.4s ease;
 
   &:hover {
     transform: translateY(-10px);
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 25px 50px -12px rgba($primary-gold, 0.25);
+    border-color: $primary-gold-light;
 
     .project-image {
       transform: scale(1.1);
@@ -168,7 +183,7 @@ $institutional-color: #8b5cf6;
 .project-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba($text-dark, 0.9) 0%, rgba($text-dark, 0.4) 50%, transparent 100%);
+  background: linear-gradient(to top, rgba($black, 0.85) 0%, rgba($black, 0.4) 50%, transparent 100%);
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -189,9 +204,10 @@ $institutional-color: #8b5cf6;
   border-radius: 9999px;
   text-decoration: none;
   transition: all 0.3s ease;
+  border: 1px solid $primary-gold;
 
   &:hover {
-    background: $primary-color;
+    background: $primary-gold;
     color: $white;
     transform: scale(1.05);
   }
@@ -213,20 +229,24 @@ $institutional-color: #8b5cf6;
   letter-spacing: 0.5px;
   color: $white;
 
-  &[data-category="commercial"] {
-    background: $commercial-color;
+  &[data-category="gold"] {
+    background: $category-gold;
+    color: $text-dark;
   }
 
-  &[data-category="residential"] {
-    background: $residential-color;
+  &[data-category="silver"] {
+    background: $category-silver;
+    color: $text-dark;
   }
 
-  &[data-category="industrial"] {
-    background: $industrial-color;
+  &[data-category="black"] {
+    background: $category-black;
   }
 
-  &[data-category="institutional"] {
-    background: $institutional-color;
+  &[data-category="white"] {
+    background: $category-white;
+    color: $text-dark;
+    border: 1px solid $silver;
   }
 }
 
@@ -240,12 +260,13 @@ $institutional-color: #8b5cf6;
   align-items: center;
   gap: 0.5rem;
   font-size: 0.8125rem;
-  color: $primary-color;
+  color: $text-gray;
   margin-bottom: 0.75rem;
   font-weight: 500;
 
   i {
     font-size: 0.75rem;
+    color: $primary-gold;
   }
 }
 
@@ -266,7 +287,7 @@ $institutional-color: #8b5cf6;
     transition: color 0.3s ease;
 
     &:hover {
-      color: $primary-color;
+      color: $primary-gold;
     }
   }
 }
@@ -295,16 +316,16 @@ $institutional-color: #8b5cf6;
   align-items: center;
   gap: 0.375rem;
   padding: 0.375rem 0.75rem;
-  background: $cyan-50;
-  color: $primary-dark;
+  background: $primary-gold-light;
+  color: $text-dark;
   font-size: 0.75rem;
   font-weight: 500;
   border-radius: 0.375rem;
-  border: 1px solid $cyan-100;
+  border: 1px solid $primary-gold;
 
   i {
     font-size: 0.625rem;
-    color: $primary-color;
+    color: $primary-gold-dark;
   }
 }
 
@@ -320,17 +341,18 @@ $institutional-color: #8b5cf6;
   gap: 0.5rem;
   font-size: 0.9375rem;
   font-weight: 600;
-  color: $primary-color;
+  color: $text-dark;
   text-decoration: none;
   transition: all 0.3s ease;
 
   i {
     font-size: 0.75rem;
     transition: transform 0.3s ease;
+    color: $primary-gold;
   }
 
   &:hover {
-    color: $primary-dark;
+    color: $primary-gold;
 
     i {
       transform: translateX(5px);
@@ -357,14 +379,16 @@ $institutional-color: #8b5cf6;
   cursor: pointer;
 
   &.btn-primary {
-    background: linear-gradient(135deg, $primary-light 0%, $primary-color 100%);
-    color: $white;
-    border: none;
-    box-shadow: 0 4px 14px 0 rgba($primary-color, 0.3);
+    background: linear-gradient(135deg, $primary-gold-light 0%, $primary-gold 100%);
+    color: $text-dark;
+    border: 1px solid $primary-gold-dark;
+    box-shadow: 0 4px 14px 0 rgba($primary-gold, 0.3);
 
     &:hover {
       transform: translateY(-3px);
-      box-shadow: 0 8px 25px 0 rgba($primary-color, 0.4);
+      box-shadow: 0 8px 25px 0 rgba($primary-gold, 0.5);
+      background: linear-gradient(135deg, $primary-gold 0%, $primary-gold-dark 100%);
+      color: $white;
     }
 
     i {

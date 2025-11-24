@@ -1,118 +1,120 @@
 <!-- Hero Section with Rotating Services -->
 <section class="hero-section">
-  <section class="hero-section">
-    <!-- Animated Water Background -->
-    <div class="background-effects">
-      <!-- Floating Bubbles -->
-      <div *ngFor="let bubble of bubbles" class="bubble" [style.width.px]="bubble.size" [style.height.px]="bubble.size"
-        [style.left.%]="bubble.left" [style.bottom.px]="bubble.bottom" [style.animationDuration.s]="bubble.duration"
-        [style.animationDelay.s]="bubble.delay">
-      </div>
-
-      <!-- Water Ripple Circles -->
-      <div class="ripple-container">
-        <div *ngFor="let ripple of ripples; let i = index" class="ripple-circle" [style.animationDelay.s]="i * 1.5">
-        </div>
-      </div>
-
-      <!-- Gradient Orbs -->
-      <div class="gradient-orb orb-1" [ngStyle]="getOrbStyle(0)"></div>
-      <div class="gradient-orb orb-2" [ngStyle]="getOrbStyle(1)"></div>
+  <!-- Animated Background Effects -->
+  <div class="background-effects">
+    <!-- Floating Bubbles -->
+    <div *ngFor="let bubble of bubbles" class="bubble" 
+      [style.width.px]="bubble.size" 
+      [style.height.px]="bubble.size"
+      [style.left.%]="bubble.left" 
+      [style.bottom.px]="bubble.bottom" 
+      [style.animationDuration.s]="bubble.duration"
+      [style.animationDelay.s]="bubble.delay">
     </div>
 
-    <!-- Wave SVG at bottom -->
-    <div class="wave-container">
-      <svg viewBox="0 0 1440 320" class="wave-svg">
-        <defs>
-          <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" stop-color="#0891b2" stop-opacity="0.3" />
-            <stop offset="50%" stop-color="#06b6d4" stop-opacity="0.5" />
-            <stop offset="100%" stop-color="#22d3ee" stop-opacity="0.3" />
-          </linearGradient>
-        </defs>
-        <path fill="url(#waveGradient)"
-          d="M0,160L48,170.7C96,181,192,203,288,192C384,181,480,139,576,138.7C672,139,768,181,864,197.3C960,213,1056,203,1152,176C1248,149,1344,107,1392,85.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-          class="wave-path">
-        </path>
-      </svg>
+    <!-- Water Ripple Circles -->
+    <div class="ripple-container">
+      <div *ngFor="let ripple of ripples; let i = index" 
+        class="ripple-circle" 
+        [style.animationDelay.s]="i * 1.5">
+      </div>
     </div>
 
-    <!-- Main Content -->
-    <div class="container">
-      <div class="hero-content">
-        <!-- Left Side - Water Drop with Branding -->
-        <div class="hero-left">
-          <div class="water-drop-container">
-            <img src="assets/eagle.png" alt="" style="width: 300px;height: auto;">
-            <!-- Central Water Drop -->
-            <!-- <div class="water-drop">
-              <div class="drop-shape">
-                <div class="drop-shine-1"></div>
-                <div class="drop-shine-2"></div>
-              </div>
-              <div class="drop-inner-glow"></div>
+    <!-- Gradient Orbs -->
+    <div class="gradient-orb orb-1" [ngStyle]="getOrbStyle(0)"></div>
+    <div class="gradient-orb orb-2" [ngStyle]="getOrbStyle(1)"></div>
+  </div>
 
-              
-              <div class="drop-content">
-                <h1 class="company-name">Aura</h1>
-                <p class="company-tagline">Water Management</p>
-              </div>
-            </div> -->
+  <!-- Wave SVG at bottom -->
+  <div class="wave-container">
+    <svg viewBox="0 0 1440 320" class="wave-svg">
+      <defs>
+        <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#fff" stop-opacity="1" />
+          <stop offset="50%" stop-color="#fff" stop-opacity="1" />
+          <stop offset="100%" stop-color="#fff" stop-opacity="1" />
+        </linearGradient>
+      </defs>
+      <path fill="url(#waveGradient)"
+        d="M0,160L48,170.7C96,181,192,203,288,192C384,181,480,139,576,138.7C672,139,768,181,864,197.3C960,213,1056,203,1152,176C1248,149,1344,107,1392,85.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        class="wave-path">
+      </path>
+    </svg>
+  </div>
 
-            <!-- Small floating water drops -->
-            <div class="mini-drop mini-drop-1"></div>
-            <div class="mini-drop mini-drop-2"></div>
-            <div class="mini-drop mini-drop-3"></div>
-            <div class="mini-drop mini-drop-4"></div>
-
-            <!-- Rotating rings -->
-            <!-- <div class="rotating-ring ring-1"></div>
-            <div class="rotating-ring ring-2"></div> -->
-
-            <!-- Ripple effects around drop -->
-            <div *ngFor="let ripple of ripples; let i = index" class="drop-ripple" [style.animationDelay.s]="i * 1.2">
-            </div>
+  <!-- Main Content Container -->
+  <div class="container">
+    <div class="hero-content">
+      
+      <!-- Left Side - Image with Decorative Elements -->
+      <div class="hero-left">
+        <div class="water-drop-container">
+          <!-- Main Hero Image -->
+          <div class="hero-image-wrapper">
+            <!-- <img src="assets/homeImg.png" alt="Premium Water Solutions" class="hero-main-image"> -->
+            
+            <!-- Decorative shine effect -->
+            <div class="image-shine"></div>
           </div>
 
-          <!-- Premium Badge -->
-          <div class="premium-badge">
-            <span>✨ Premium Water Solutions</span>
+          <!-- Small floating water drops -->
+          <div class="mini-drop mini-drop-1"></div>
+          <div class="mini-drop mini-drop-2"></div>
+          <div class="mini-drop mini-drop-3"></div>
+          <div class="mini-drop mini-drop-4"></div>
+
+          <!-- Rotating rings (optional - uncomment if needed) -->
+          <!-- <div class="rotating-ring ring-1"></div>
+          <div class="rotating-ring ring-2"></div> -->
+
+          <!-- Ripple effects around image -->
+          <div *ngFor="let ripple of ripples; let i = index" 
+            class="drop-ripple" 
+            [style.animationDelay.s]="i * 1.2">
           </div>
         </div>
 
-        <!-- Right Side - Hero Text -->
-        <div class="hero-right">
-          <h2 class="hero-title">
-            Smart Water Solutions
-            <span class="gradient-text">For a Healthier Lifestyle</span>
-          </h2>
-
-          <p class="hero-description">
-            We offer high-efficiency water purification systems engineered to remove impurities, chemicals, and
-            contaminants. Enjoy consistent clean water and long-lasting performance backed by expert support.
-          </p>
-
-          <!-- Stats -->
-          <div class="stats-container">
-            <div *ngFor="let stat of stats" class="stat-item">
-              <div class="stat-value">{{ stat.value }}</div>
-              <div class="stat-label">{{ stat.label }}</div>
-            </div>
-          </div>
-
-          <!-- CTA Buttons -->
-          <div class="hero-actions">
-            <a routerLink="/services" class="btn btn-primary">
-              <span>Explore Services</span>
-            </a>
-            <a routerLink="/contact-us" class="btn btn-outline">
-              Get In Touch
-            </a>
-          </div>
+        <!-- Premium Badge -->
+        <div class="premium-badge">
+          <span>✨ Premium Water Solutions</span>
         </div>
       </div>
+
+      <!-- Right Side - Hero Text Content -->
+      <div class="hero-right">
+        <!-- Main Heading -->
+        <h1 class="hero-title">
+          Smart Water Solutions
+          <span class="gradient-text">For a Healthier Lifestyle</span>
+        </h1>
+
+        <!-- Description -->
+        <p class="hero-description">
+          We offer high-efficiency water purification systems engineered to remove impurities, chemicals, and
+          contaminants. Enjoy consistent clean water and long-lasting performance backed by expert support.
+        </p>
+
+        <!-- Statistics -->
+        <div class="stats-container">
+          <div *ngFor="let stat of stats" class="stat-item">
+            <div class="stat-value">{{ stat.value }}</div>
+            <div class="stat-label">{{ stat.label }}</div>
+          </div>
+        </div>
+
+        <!-- Call-to-Action Buttons -->
+        <div class="hero-actions">
+          <a routerLink="/services" class="btn btn-primary">
+            <span>Explore Services</span>
+          </a>
+          <a routerLink="/contact-us" class="btn btn-outline">
+            Get In Touch
+          </a>
+        </div>
+      </div>
+
     </div>
-  </section>
+  </div>
 </section>
 <app-products></app-products>
 <!-- Services Preview Section -->
@@ -136,7 +138,7 @@
     </div>
 
     <div class="section-action">
-      <a routerLink="/services" class="btn btn-primary">View All Services</a>
+      <a routerLink="/services" class="btn btn-primary">View All Services<i class="fas fa-arrow-right"></i></a>
     </div>
   </div>
 </section>

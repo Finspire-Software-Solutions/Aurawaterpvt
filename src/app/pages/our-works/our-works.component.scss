@@ -1,3 +1,26 @@
+$primary-gold: #FFD700;        // Pure gold
+$primary-gold-dark: #DAA520;   // Darker gold (goldenrod)
+$primary-gold-light: #FFF4C4;  // Light gold/cream
+
+// Metallic Colors
+$silver: #C0C0C0;              // Silver
+$silver-dark: #A9A9A9;         // Dark silver
+$silver-light: #E8E8E8;        // Light silver/metallic
+
+$black: #000000;               // Pure black
+$text-dark: #1a1a1a;           // Softer black for text
+$text-gray: #4a4a4a;           // Dark gray for secondary text
+
+$white: #ffffff;               // Pure white
+$off-white: #fafafa;           // Off-white for backgrounds
+
+// Accent & UI Colors
+$gold-accent: #e08e00;         // Orange-gold accent
+$metallic-shine: #d4d4d4;      // For metallic effects
+$border-color: #e5e5e5;        // Light border
+$bg-light: #f5f5f5;            // Light background
+
+
 .our-works-page {
   padding-top: 80px;
   outline: none; // For keyboard navigation
@@ -42,28 +65,29 @@
     justify-content: center;
 
     .filter-btn {
-      padding: 0.6rem 1.5rem;
-      border: 2px solid #e2e8f0;
-      background: white;
-      color: #64748b;
-      border-radius: 25px;
-      font-weight: 600;
-      cursor: pointer;
-      transition: all 0.3s ease;
+  padding: 0.625rem 1.25rem;
+  border: 1px solid $silver;
+  background: $white;
+  color: $text-gray;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 
-      &:hover {
-        border-color: #667eea;
-        color: #667eea;
-        transform: translateY(-2px);
-      }
+  &:hover {
+    border-color: $primary-gold;
+    color: $text-dark;
+    background: $primary-gold-light;
+  }
 
-      &.active {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        color: white;
-        border-color: transparent;
-        box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
-      }
-    }
+  &.active {
+    background: $primary-gold;
+    border-color: $primary-gold-dark;
+    color: $white;
+  }
+}
+
   }
 
   // Works Section
