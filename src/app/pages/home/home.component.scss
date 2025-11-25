@@ -533,12 +533,13 @@ $blue-600: #f59e0b;
   flex-direction: column;
   align-items: center;
   gap: 3rem;
-  padding: 2rem 0;
+  padding: 6rem 0;
 
   @media (min-width: 1024px) {
     flex-direction: row;
     justify-content: space-between;
     gap: 4rem;
+    padding: 6rem 0;
   }
 }
 
@@ -1762,20 +1763,6 @@ $blue-600: #f59e0b;
   z-index: 10;
 }
 
-// Hero Content
-.hero-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 3rem;
-  padding: 2rem 0;
-
-  @media (min-width: 1024px) {
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 4rem;
-  }
-}
 
 // Left Side
 .hero-left {

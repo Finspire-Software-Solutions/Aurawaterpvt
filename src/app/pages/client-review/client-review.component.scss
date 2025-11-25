@@ -206,7 +206,7 @@ $off-white: #fafafa;            // Off-white
   &:hover {
     background: rgba($white, 0.08);
     border-color: rgba($primary-silver, 0.5);
-    transform: translateY(-8px);
+    transform: translateY(-1px);
     box-shadow: 0 8px 30px rgba($primary-silver, 0.25);
   }
 }
@@ -337,7 +337,7 @@ $off-white: #fafafa;            // Off-white
 
   &:hover {
     background: rgba($primary-silver, 0.6);
-    transform: scale(1.2);
+    transform: scale(0.9);
   }
 
   &.active {
@@ -440,25 +440,4 @@ $off-white: #fafafa;            // Off-white
 
 .trust-badges {
   animation-delay: 0.4s;
-}
-
-// Silver shine effect on hover
-.review-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba($primary-silver, 0.2),
-    transparent
-  );
-  transition: left 0.5s ease;
-}
-
-.review-card:hover::before {
-  left: 100%;
 }

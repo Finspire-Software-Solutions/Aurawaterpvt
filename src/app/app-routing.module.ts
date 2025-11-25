@@ -9,6 +9,7 @@ import { AdminComponent } from './pages/admin/admin.component';
 import { BlogComponent } from './pages/blog/blog.component';
 import { LoginComponent } from './pages/login/login.component';
 import { AuthGuard } from './auth/auth.guard';
+import { ProductsComponent } from './pages/products/products.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -21,6 +22,7 @@ const routes: Routes = [
   { path: 'admin', component: AdminComponent, canActivate: [AuthGuard] },
   { path: 'blog/:slug', component: BlogComponent },
   { path: 'our-works/:slug', component: OurWorksComponent },
+  { path: 'products', component: ProductsComponent },
   { path: '**', redirectTo: '' },
 ];
 

@@ -1,0 +1,133 @@
+.top-bar {
+  background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
+  border-bottom: 1px solid #4b4a4a;
+  padding: 0.5rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1001;
+  font-size: 0.875rem;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .top-bar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .contact-info {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+
+    .info-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: #ffffff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+      font-weight: 500;
+
+      i {
+        font-size: 1rem;
+      }
+
+      &:hover {
+        color: #f59e0b;
+      }
+    }
+  }
+
+  .social-links {
+    display: flex;
+    gap: 1rem;
+
+    .social-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: rgba(245, 158, 11, 0.1);
+      color: #ffffff;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      font-size: 0.875rem;
+
+      &:hover {
+        background: #f59e0b;
+        color: #000;
+        transform: translateY(-2px);
+      }
+    }
+  }
+}
+
+// Update navbar to account for top bar
+.navbar {
+  top: 41px; // Adjust based on top bar height
+  // ... rest of your navbar styles
+}
+
+// Mobile responsive
+@media (max-width: 768px) {
+  .top-bar {
+    padding: 0.75rem 0;
+
+    .container {
+      padding: 0 1rem;
+    }
+
+    .top-bar-content {
+      flex-direction: row;
+      gap: 0.75rem;
+    }
+
+    .contact-info {
+      flex-direction: row;
+      gap: 0.5rem;
+      width: 100%;
+      text-align: center;
+
+      .info-item {
+        font-size: 0.813rem;
+        
+        span {
+          display: none; // Hide text on very small screens
+        }
+        
+        i {
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    .social-links {
+      justify-content: center;
+    }
+  }
+
+  .navbar {
+    top: auto; // Adjust for mobile if needed
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .top-bar {
+    .contact-info {
+      gap: 1rem;
+
+      .info-item span {
+        font-size: 0.813rem;
+      }
+    }
+  }
+}

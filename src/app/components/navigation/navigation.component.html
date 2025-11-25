@@ -1,10 +1,11 @@
+
+<app-top-bar-component></app-top-bar-component>
 <nav class="navbar">
   <div class="container">
     <div class="navbar-brand">
       <a routerLink="/" class="brand-link">
         <app-logo></app-logo>
       </a>
-      
     </div>
     
     <div class="navbar-menu" [class.is-active]="isMenuOpen">
@@ -13,18 +14,36 @@
           <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" 
              class="nav-link" (click)="closeMenu()">Home</a>
         </li>
-        <li class="nav-item">
-          <a routerLink="/services" routerLinkActive="active" 
-             class="nav-link" (click)="closeMenu()">Services</a>
+        
+        <!-- Dropdown Menu -->
+        <li class="nav-item dropdown" 
+            (mouseenter)="openDropdown()" 
+            (mouseleave)="closeDropdown()">
+          <a class="nav-link dropdown-toggle" 
+             [class.active]="isDropdownActive()">
+            What We Do
+            <i class="arrow-icon" [class.open]="isDropdownOpen"></i>
+          </a>
+          <ul class="dropdown-menu" [class.show]="isDropdownOpen">
+            <li>
+              <a routerLink="/services" routerLinkActive="active" 
+                 class="dropdown-link" (click)="closeMenu()">Our Services</a>
+            </li>
+            <li>
+              <a routerLink="/products" routerLinkActive="active" 
+                 class="dropdown-link" (click)="closeMenu()">Our Products</a>
+            </li>
+            <li>
+              <a routerLink="/our-works" routerLinkActive="active" 
+                 class="dropdown-link" (click)="closeMenu()">Our Works</a>
+            </li>
+            <li>
+              <a routerLink="/about-us" routerLinkActive="active" 
+                 class="dropdown-link" (click)="closeMenu()">About Us</a>
+            </li>
+          </ul>
         </li>
-        <li class="nav-item">
-          <a routerLink="/our-works" routerLinkActive="active" 
-             class="nav-link" (click)="closeMenu()">Our Works</a>
-        </li>
-        <li class="nav-item">
-          <a routerLink="/about-us" routerLinkActive="active" 
-             class="nav-link" (click)="closeMenu()">About Us</a>
-        </li>
+        
         <li class="nav-item">
           <a routerLink="/blog" routerLinkActive="active" 
              class="nav-link" (click)="closeMenu()">Blog</a>

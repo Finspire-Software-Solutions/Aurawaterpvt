@@ -116,7 +116,11 @@
     </div>
   </div>
 </section>
-<app-products></app-products>
+<app-products 
+  [limitProducts]="6" 
+  [showFilters]="false" 
+  [showViewAll]="true">
+</app-products>
 <!-- Services Preview Section -->
 <section class="section services-preview">
   <div class="section-header">

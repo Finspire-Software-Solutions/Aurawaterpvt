@@ -24,6 +24,7 @@ import { LoaderInterceptor } from './shared/loader/loader.interceptor';
 import { ClientReviewComponent } from './pages/client-review/client-review.component';
 import { RecentProjectsComponent } from './pages/recent-projects/recent-projects.component';
 import { ProductsComponent } from './pages/products/products.component';
+import { TopBarComponentComponent } from './components/top-bar-component/top-bar-component.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { ProductsComponent } from './pages/products/products.component';
     ToastContainerComponent,
     ClientReviewComponent,
     RecentProjectsComponent,
-    ProductsComponent
+    ProductsComponent,
+    TopBarComponentComponent
     
   ],
   imports: [
