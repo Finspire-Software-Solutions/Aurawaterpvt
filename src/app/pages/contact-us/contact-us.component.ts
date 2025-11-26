@@ -37,7 +37,7 @@ export class ContactUsComponent implements OnInit {
     {
       icon: 'fas fa-map-marker-alt',
       title: 'Address',
-      value: 'No 419, Sawmill Road, Thirunagar south, Kilinochchi, Nothern Province, Sri Lanka',
+      value: 'No 419, Sawmill Road, Thirunagar south, Kilinochchi',
       link: 'https://maps.google.com'
     }
   ];

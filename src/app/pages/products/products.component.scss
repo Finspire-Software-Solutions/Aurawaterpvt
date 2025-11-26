@@ -147,7 +147,9 @@
   }
 
   .product-item {
-    cursor: pointer;
+      display: flex;
+      cursor: pointer;
+      justify-content: center;
 
     .product-image {
       position: relative;

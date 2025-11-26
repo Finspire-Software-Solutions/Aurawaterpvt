@@ -53,7 +53,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
   ripples = [0, 1, 2];
 
   stats: Stat[] = [
-    { value: '10K+', label: 'Happy Customers' },
+    { value: '1K+', label: 'Happy Customers' },
     { value: '99%', label: 'Pure Water' },
     { value: '24/7', label: 'Support' }
   ];

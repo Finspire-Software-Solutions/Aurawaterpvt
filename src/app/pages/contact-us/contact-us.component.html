@@ -109,8 +109,9 @@
         <!-- Contact Form -->
         <div class="contact-form-container">
           <h2 class="form-title">Send us a Message</h2>
-          <form [formGroup]="contactForm" class="contact-form">
+          <form action="https://api.web3forms.com/submit" class="contact-form">
             <div class="form-row">
+              <input type="hidden" name="access_key" value="6ff5c995-b08e-48c8-94dd-bda3431e1160">
               <div class="form-group">
                 <label for="firstName">First Name *</label>
                 <input 
@@ -128,7 +129,6 @@
                   type="text" 
                   id="lastName" 
                   name="lastName" 
-                  formControlName="lastName" 
                   required 
                   class="form-control"
                   placeholder="Your last name">
@@ -141,8 +141,7 @@
                 <input 
                   type="email" 
                   id="email" 
-                  name="email" 
-                  formControlName="email" 
+                  name="email"
                   required 
                   email 
                   class="form-control"
@@ -153,8 +152,7 @@
                 <input 
                   type="tel" 
                   id="phone" 
-                  name="phone" 
-                  formControlName="phoneNo" 
+                  name="phone"
                   class="form-control"
                   placeholder="+1 (555) 123-4567">
               </div>
@@ -166,21 +164,22 @@
                 type="text" 
                 id="company" 
                 name="company" 
-                formControlName="company" 
                 class="form-control"
                 placeholder="Your company name">
             </div>
 
             <div class="form-group">
               <label for="service">Service Interested In</label>
-              <select id="service" name="service" formControlName="interestedService" class="form-control">
+              <select id="service" name="service" class="form-control">
                 <option value="">Select a service</option>
-                <option value="web-development">Web Development</option>
-                <option value="mobile-development">Mobile App Development</option>
-                <option value="cloud-solutions">Cloud Solutions</option>
-                <option value="ai-ml">AI & Machine Learning</option>
-                <option value="ui-ux-design">UI/UX Design</option>
-                <option value="consulting">Technology Consulting</option>
+                <option value="web-development">Domestic Water Purifiers</option>
+                <option value="mobile-development">Commercial RO Systems</option>
+                <option value="cloud-solutions">Industrial RO Systems</option>
+                <option value="ai-ml">RO Service and Repairing</option>
+                <option value="ui-ux-design">Solar Water Heater Systems</option>
+                <option value="consulting">Waste Water Systems</option>
+                <option value="consulting">Swimming Pool Design Contracting & Maintenance</option>
+                <option value="consulting">Selling Parts of RO Systems</option>
                 <option value="other">Other</option>
               </select>
             </div>
@@ -189,15 +188,14 @@
               <label for="message">Message *</label>
               <textarea 
                 id="message" 
-                name="message" 
-                formControlName="message" 
+                name="message"
                 required 
                 rows="5" 
                 class="form-control"
                 placeholder="Tell us about your project..."></textarea>
             </div>
 
-            <button type="button" class="btn btn-primary" (click)="onSubmit(contactForm)">
+            <button type="button" class="btn btn-primary">
               Send Message
             </button>
           </form>

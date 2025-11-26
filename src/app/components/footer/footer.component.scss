@@ -52,11 +52,13 @@
     &.social-section {
       text-align: center;
 
-      .section-title {
+      .about-section-title {
         font-size: 1rem;
         font-weight: 600;
         margin: 0 0 1rem 0;
         color: white;
+        text-align: center;
+        background-clip: text;
       }
 
       .social-links {
@@ -96,7 +98,7 @@
           }
 
           &.twitter {
-            background: #1da1f2;
+            background: #000000;
             color: white;
 
             &:hover {
@@ -235,3 +237,4 @@
     }
   }
 }
+

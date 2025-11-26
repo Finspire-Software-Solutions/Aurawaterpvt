@@ -33,30 +33,54 @@ export class ServicesComponent implements OnInit {
     }));
   }
   services = [
-    {
-      name: '24 x 7 Support',
-      icon: 'fas fa-globe',
-      description: 'Custom web applications built with modern technologies like Angular, React, and Node.js',
-      features: ['Responsive Design', 'Progressive Web Apps', 'E-commerce Solutions', 'CMS Development']
-    },
-    {
-      name: 'Water Quality Testing',
-      icon: 'fas fa-mobile-alt',
-      description: 'Native and cross-platform mobile applications for iOS and Android',
-      features: ['Native iOS/Android', 'React Native', 'Flutter', 'App Store Optimization']
-    },
-    {
-      name: 'Filter Maintenance & Servicing',
-      icon: 'fas fa-cloud',
-      description: 'Scalable cloud infrastructure and migration services',
-      features: ['AWS/Azure/GCP', 'DevOps & CI/CD', 'Microservices', 'Container Orchestration']
-    },
-    {
-      name: 'Water Filter Installation',
-      icon: 'fas fa-paint-brush',
-      description: 'Professional graphics designs for your business',
-      features: ['Logo Design', 'Banner Design', 'Poster Design', 'Business Card Design']
-    }
+   {
+  name: 'Domestic Water Purifiers',
+  icon: 'fas fa-home',
+  description: 'Advanced water purification systems for homes ensuring safe and clean drinking water for your family',
+  features: ['Multi-Stage Filtration', 'UV Protection', 'Mineral Retention', 'Energy Efficient']
+},
+{
+  name: 'Commercial RO Systems',
+  icon: 'fas fa-building',
+  description: 'High-capacity reverse osmosis systems designed for offices, restaurants, and commercial establishments',
+  features: ['Large Scale Purification', 'Auto-Flush Technology', 'Remote Monitoring', 'Low Maintenance']
+},
+{
+  name: 'Industrial RO Systems',
+  icon: 'fas fa-industry',
+  description: 'Heavy-duty water treatment solutions for manufacturing units, factories, and industrial applications',
+  features: ['High Flow Rate', 'Customizable Capacity', 'Industrial Grade Filters', 'Process Automation']
+},
+{
+  name: 'RO Service and Repairing',
+  icon: 'fas fa-tools',
+  description: 'Professional maintenance and repair services for all types of RO water purification systems',
+  features: ['Filter Replacement', 'Membrane Cleaning', 'Leak Repairs', 'Performance Optimization']
+},
+{
+  name: 'Solar Water Heater Systems',
+  icon: 'fas fa-solar-panel',
+  description: 'Eco-friendly solar water heating solutions for residential and commercial properties',
+  features: ['Energy Savings', 'Eco-Friendly', 'All Weather Performance', 'Long Lifespan']
+},
+{
+  name: 'Waste Water Systems',
+  icon: 'fas fa-recycle',
+  description: 'Comprehensive wastewater treatment and recycling systems for sustainable water management',
+  features: ['Water Recycling', 'Effluent Treatment', 'Sewage Treatment', 'Environmental Compliance']
+},
+{
+  name: 'Swimming Pool Design Contracting & Maintenance',
+  icon: 'fas fa-swimming-pool',
+  description: 'Complete swimming pool solutions from design and construction to regular maintenance services',
+  features: ['Custom Pool Design', 'Construction Management', 'Water Chemistry Balance', 'Regular Cleaning']
+},
+{
+  name: 'Selling Parts of RO Systems',
+  icon: 'fas fa-box-open',
+  description: 'Genuine spare parts and components for all major brands of RO water purification systems',
+  features: ['Original Parts', 'Filter Cartridges', 'Membranes & Pumps', 'Quick Delivery']
+}
   ];
 
 }
