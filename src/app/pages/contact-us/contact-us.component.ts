@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, Input, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ContactService } from 'src/app/services/contact.service';
@@ -49,7 +50,7 @@ export class ContactUsComponent implements OnInit {
     { icon: 'fab fa-facebook', url: 'https://www.facebook.com/share/1LaM55SZjo/' }
   ];
 
-  constructor( private fb: FormBuilder, private toast: ToastService,private __contact: ContactService) { }
+  constructor( private http: HttpClient,private fb: FormBuilder, private toast: ToastService,private __contact: ContactService) { }
 
   contactForm!: FormGroup;
   ngOnInit(): void {
@@ -74,22 +75,52 @@ export class ContactUsComponent implements OnInit {
       delay: Math.random() * 4
     }));
   }
-  onSubmit(form: FormGroup) {
-    debugger
-      console.log('Form submitted:', form.value);
-      if (form.valid) {
-        this.__contact.addContact(form.value).subscribe({
-          next: (res) => {
-            console.log("Contact added successfully",res); 
-            this.toast.success(res);
-            form.reset();
-          },
-          error: (err) => {
-            console.log("Contact added failed",err); 
-            this.toast.error(err.error);
-          }
-        })
-      }
-  }
+  onSubmit(event: Event) {
+    event.preventDefault();
+    
+    const form = event.target as HTMLFormElement;
+    const formData = new FormData(form);
+    
+    const data = {
+      access_key: 'bbe84041-8f7e-4172-947c-f14b710c004b',
+      firstName: formData.get('firstName'),
+      lastName: formData.get('lastName'),
+      email: formData.get('email'),
+      phone: formData.get('phone'),
+      company: formData.get('company'),
+      service: formData.get('service'),
+      message: formData.get('message')
+    };
+
+    this.http.post('https://api.web3forms.com/submit', data)
+      .subscribe({
+        next: (response) => {
+          console.log('Success!', response);
+          alert('Message sent successfully!');
+          form.reset();
+        },
+        error: (error) => {
+          console.error('Error!', error);
+          alert('Failed to send message. Please try again.');
+        }
+      });
+    }
+  // onSubmit(form: FormGroup) {
+  //   debugger
+  //     console.log('Form submitted:', form.value);
+  //     if (form.valid) {
+  //       this.__contact.addContact(form.value).subscribe({
+  //         next: (res) => {
+  //           console.log("Contact added successfully",res); 
+  //           this.toast.success(res);
+  //           form.reset();
+  //         },
+  //         error: (err) => {
+  //           console.log("Contact added failed",err); 
+  //           this.toast.error(err.error);
+  //         }
+  //       })
+  //     }
+  // }
 
 }

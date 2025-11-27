@@ -100,6 +100,69 @@ allProducts: Product[] = [
       description: 'Adds beneficial minerals and increases pH',
       price: 'LKR 32,000',
       category: 'Filters'
+    },   {
+      id: 8,
+      name: 'Alkaline Water Filter',
+      image: 'assets/images/products/product-9.jpg',
+      capacity: '2000L',
+      filterTime: '6 months',
+      description: 'Adds beneficial minerals and increases pH',
+      price: 'LKR 32,000',
+      category: 'Filters'
+    },   {
+      id: 8,
+      name: 'Alkaline Water Filter',
+      image: 'assets/images/products/product-10.jpg',
+      capacity: '2000L',
+      filterTime: '6 months',
+      description: 'Adds beneficial minerals and increases pH',
+      price: 'LKR 32,000',
+      category: 'Filters'
+    },   {
+      id: 8,
+      name: 'Alkaline Water Filter',
+      image: 'assets/images/products/product-11.jpg',
+      capacity: '2000L',
+      filterTime: '6 months',
+      description: 'Adds beneficial minerals and increases pH',
+      price: 'LKR 32,000',
+      category: 'Filters'
+    },   {
+      id: 8,
+      name: 'Alkaline Water Filter',
+      image: 'assets/images/products/product-12.jpg',
+      capacity: '2000L',
+      filterTime: '6 months',
+      description: 'Adds beneficial minerals and increases pH',
+      price: 'LKR 32,000',
+      category: 'Filters'
+    },   {
+      id: 8,
+      name: 'Alkaline Water Filter',
+      image: 'assets/images/products/product-13.jpg',
+      capacity: '2000L',
+      filterTime: '6 months',
+      description: 'Adds beneficial minerals and increases pH',
+      price: 'LKR 32,000',
+      category: 'Filters'
+    },   {
+      id: 8,
+      name: 'Alkaline Water Filter',
+      image: 'assets/images/products/product-14.jpg',
+      capacity: '2000L',
+      filterTime: '6 months',
+      description: 'Adds beneficial minerals and increases pH',
+      price: 'LKR 32,000',
+      category: 'Filters'
+    },   {
+      id: 8,
+      name: 'Alkaline Water Filter',
+      image: 'assets/images/products/product-15.jpg',
+      capacity: '2000L',
+      filterTime: '6 months',
+      description: 'Adds beneficial minerals and increases pH',
+      price: 'LKR 32,000',
+      category: 'Filters'
     }
   ];
 
