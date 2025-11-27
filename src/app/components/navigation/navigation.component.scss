@@ -209,7 +209,8 @@
 
         .nav-item {
           .nav-link {
-            display: block;
+            display: flex;
+            align-items: center;
             padding: 1rem;
             border-bottom: 1px solid #333;
           }
