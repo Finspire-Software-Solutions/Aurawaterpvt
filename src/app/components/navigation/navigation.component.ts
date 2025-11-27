@@ -1,21 +1,23 @@
-import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component } from "@angular/core";
+import { Router } from "@angular/router";
 
 @Component({
-  selector: 'app-navigation',
-  templateUrl: './navigation.component.html',
-  styleUrls: ['./navigation.component.scss']
+  selector: "app-navigation",
+  templateUrl: "./navigation.component.html",
+  styleUrls: ["./navigation.component.scss"],
 })
 export class NavigationComponent {
   isMenuOpen = false;
   isDropdownOpen = false;
-  
+
   constructor(private router: Router) {}
-  
+
   toggleMenu() {
     this.isMenuOpen = !this.isMenuOpen;
   }
-
+toggleDropdown() {
+  this.isDropdownOpen = !this.isDropdownOpen;
+}
   closeMenu() {
     this.isMenuOpen = false;
     this.isDropdownOpen = false;
@@ -31,11 +33,12 @@ export class NavigationComponent {
 
   isDropdownActive(): boolean {
     // Check if any of the dropdown routes are active
-    const dropdownRoutes = ['/services', '/products', '/our-works', '/about-us'];
-    return dropdownRoutes.some(route => 
-      this.router.isActive(route, false)
-    );
+    const dropdownRoutes = [
+      "/services",
+      "/products",
+      "/our-works",
+      "/about-us",
+    ];
+    return dropdownRoutes.some((route) => this.router.isActive(route, false));
   }
-
-  
 }
