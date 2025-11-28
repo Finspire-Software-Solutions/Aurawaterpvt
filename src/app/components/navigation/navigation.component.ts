@@ -37,7 +37,6 @@ toggleDropdown() {
       "/services",
       "/products",
       "/our-works",
-      "/about-us",
     ];
     return dropdownRoutes.some((route) => this.router.isActive(route, false));
   }

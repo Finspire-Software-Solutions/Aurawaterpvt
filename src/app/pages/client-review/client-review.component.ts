@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 interface Review {
   id: number;
   name: string;
-  role: string;
   location: string;
   image: string;
   rating: number;
@@ -18,7 +17,6 @@ reviews: Review[] = [
     {
       id: 1,
       name: 'Sanjay Kumar',
-      role: 'Homeowner',
       location: 'Kilinochchi',
       image: 'assets/images/reviews/client-1.png',
       rating: 5,
@@ -27,7 +25,6 @@ reviews: Review[] = [
     {
       id: 2,
       name: 'Lakshmi Devi',
-      role: 'School Principal',
       location: 'Mullaitivu',
       image: 'assets/images/reviews/client-4.png',
       rating: 5,
@@ -36,7 +33,6 @@ reviews: Review[] = [
     {
       id: 3,
       name: 'Priya Selvam',
-      role: 'Restaurant Owner',
       location: 'Jaffna',
       image: 'assets/images/reviews/client-2.png',
       rating: 5,
@@ -45,7 +41,6 @@ reviews: Review[] = [
     {
       id: 4,
       name: 'Mohamed Rizwan',
-      role: 'Factory Manager',
       location: 'Vavuniya',
       image: 'assets/images/reviews/client-3.png',
       rating: 5,
@@ -53,8 +48,15 @@ reviews: Review[] = [
     },
     {
       id: 5,
-      name: 'Lakshmi Devi',
-      role: 'School Principal',
+      name: 'Deshan Pathirana',
+      location: 'Vavuniya',
+      image: 'assets/images/reviews/client-4.png',
+      rating: 5,
+      review: 'Aura installed water purifiers across our school campus. The children now have access to safe drinking water. Their team is responsive and the after-sales service is excellent.'
+    },
+    {
+      id: 6,
+      name: 'Ashoka Ranaweera',
       location: 'Mullaitivu',
       image: 'assets/images/reviews/client-4.png',
       rating: 5,
@@ -62,9 +64,8 @@ reviews: Review[] = [
     },
     {
       id: 6,
-      name: 'Suresh Kamar',
-      role: 'School Principal',
-      location: 'Mullaitivu',
+      name: 'Mohammed Kahan',
+      location: 'Tringomale',
       image: 'assets/images/reviews/client-4.png',
       rating: 5,
       review: 'Aura installed water purifiers across our school campus. The children now have access to safe drinking water. Their team is responsive and the after-sales service is excellent.'

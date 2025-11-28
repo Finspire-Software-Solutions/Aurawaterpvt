@@ -8,6 +8,11 @@
     max-width: 100%; // Ensure it's responsive
     object-fit: contain; // Ensure the image maintains its aspect ratio
   }
+  span{
+    color: #ffffff;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+  }
 }
 
 // Tablet view
