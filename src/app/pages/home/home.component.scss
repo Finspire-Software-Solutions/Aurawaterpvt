@@ -206,15 +206,30 @@
 // Contact Preview Section
 .contact-preview {
   text-align: center;
-
+  position: relative;
+  img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+  }
   .contact-content {
     max-width: 600px;
     margin: 0 auto;
-
+    .contact-preview-section-title{
+      color: #ffb700;
+    }
+    .contact-preview-section-subtitle{
+      color: #DAA520;
+    }
     .contact-info {
       display: flex;
       justify-content: center;
-      gap: 2rem;
+      gap: 1rem;
       margin: 2rem 0;
       flex-wrap: wrap;
       align-items: center;
@@ -223,10 +238,14 @@
         display: flex;
         align-items: center;
         gap: 0.5rem;
-        color: rgba(255, 255, 255, 0.9);
+        color: #1a1a1a;
+        background: #FFF4C4;
+        padding: 0px 15px;
+        border-radius: 5px;
+        border: 1px solid #FFD700;
 
         i {
-          color: #667eea;
+          color: #DAA520;
         }
       }
     }
@@ -1446,36 +1465,6 @@ $bg-light: #f8fafc;
         justify-content: center;
         color: white;
         font-size: 5rem;
-      }
-    }
-  }
-}
-
-// Contact Preview Section
-.contact-preview {
-  text-align: center;
-
-  .contact-content {
-    max-width: 600px;
-    margin: 0 auto;
-
-    .contact-info {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      margin: 2rem 0;
-      flex-wrap: wrap;
-      align-items: center;
-
-      .contact-item {
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-        color: rgba(255, 255, 255, 0.9);
-
-        i {
-          color: #667eea;
-        }
       }
     }
   }

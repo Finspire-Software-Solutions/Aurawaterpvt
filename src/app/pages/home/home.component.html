@@ -3,20 +3,14 @@
   <!-- Animated Background Effects -->
   <div class="background-effects">
     <!-- Floating Bubbles -->
-    <div *ngFor="let bubble of bubbles" class="bubble" 
-      [style.width.px]="bubble.size" 
-      [style.height.px]="bubble.size"
-      [style.left.%]="bubble.left" 
-      [style.bottom.px]="bubble.bottom" 
-      [style.animationDuration.s]="bubble.duration"
+    <div *ngFor="let bubble of bubbles" class="bubble" [style.width.px]="bubble.size" [style.height.px]="bubble.size"
+      [style.left.%]="bubble.left" [style.bottom.px]="bubble.bottom" [style.animationDuration.s]="bubble.duration"
       [style.animationDelay.s]="bubble.delay">
     </div>
 
     <!-- Water Ripple Circles -->
     <div class="ripple-container">
-      <div *ngFor="let ripple of ripples; let i = index" 
-        class="ripple-circle" 
-        [style.animationDelay.s]="i * 1.5">
+      <div *ngFor="let ripple of ripples; let i = index" class="ripple-circle" [style.animationDelay.s]="i * 1.5">
       </div>
     </div>
 
@@ -45,14 +39,14 @@
   <!-- Main Content Container -->
   <div class="container">
     <div class="hero-content">
-      
+
       <!-- Left Side - Image with Decorative Elements -->
       <div class="hero-left">
         <div class="water-drop-container">
           <img src="assets/img.png" alt="Premium Water Solutions" class="hero-main-image">
           <!-- Main Hero Image -->
           <div class="hero-image-wrapper">
-            
+
             <!-- Decorative shine effect -->
             <div class="image-shine"></div>
           </div>
@@ -68,9 +62,7 @@
           <div class="rotating-ring ring-2"></div> -->
 
           <!-- Ripple effects around image -->
-          <div *ngFor="let ripple of ripples; let i = index" 
-            class="drop-ripple" 
-            [style.animationDelay.s]="i * 1.2">
+          <div *ngFor="let ripple of ripples; let i = index" class="drop-ripple" [style.animationDelay.s]="i * 1.2">
           </div>
         </div>
 
@@ -116,10 +108,7 @@
     </div>
   </div>
 </section>
-<app-products 
-  [limitProducts]="6" 
-  [showFilters]="false" 
-  [showViewAll]="true">
+<app-products [limitProducts]="6" [showFilters]="false" [showViewAll]="true">
 </app-products>
 <!-- Services Preview Section -->
 <section class="section services-preview">
@@ -219,10 +208,11 @@
 
 <!-- Contact Preview Section -->
 <section class="section section-dark contact-preview">
+  <img src="assets/AURA Water Splash.png">
   <div class="container">
     <div class="contact-content">
       <h2 class="contact-preview-section-title">Ready to Start Your Project?</h2>
-      <p class="section-subtitle">Let's discuss how we can help bring your ideas to life</p>
+      <p class="contact-preview-section-subtitle">Let's discuss how we can help bring your ideas to life</p>
       <div class="contact-info">
         <div class="contact-item">
           <i class="fas fa-envelope"></i>
