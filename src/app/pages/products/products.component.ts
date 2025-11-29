@@ -33,7 +33,7 @@ allProducts: Product[] = [
     {
       id: 2,
       name: 'Aqua grand plus',
-      image: 'assets/images/products/product-2.jpg',
+      image: 'assets/images/products/product-22.png',
       capacity: '8L/min',
       filterTime: '12 months',
       description: 'Ultraviolet disinfection system that kills bacteria and viruses',
