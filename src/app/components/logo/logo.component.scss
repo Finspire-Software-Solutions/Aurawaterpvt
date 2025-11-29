@@ -3,34 +3,37 @@
   align-items: center;
   height: 50px;
   img {
-    height: 100px; // Default height for desktop
+    height: 50px; // Default height for desktop
     width: auto; // Maintain aspect ratio
     max-width: 100%; // Ensure it's responsive
     object-fit: contain; // Ensure the image maintains its aspect ratio
   }
   span{
-    color: #ffffff;
+      background: linear-gradient(#ffffff, #a8a4a7,#ffffff, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
     font-size: 30px;
-    font-family: 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    // font-family: 'Times New Roman', Times, serif;
   }
 }
 
 // Tablet view
 @media (max-width: 992px) {
   .logo-container img {
-    height: 100px;
+    height: 50px;
   }
 }
 // Mobile view
 @media (max-width: 768px) {
   .logo-container img {
-    height: 70px;
+    height: 50px;
   }
 }
 
 // Small mobile devices
 @media (max-width: 480px) {
   .logo-container img {
-    height: 70px;
+    height: 50px;
   }
 }

@@ -57,31 +57,6 @@ $bg-light: #f5f5f5;            // Light background
           line-height: 1.8;
           margin-bottom: 1.5rem;
         }
-
-        .story-stats {
-          display: grid;
-          grid-template-columns: repeat(2, 1fr);
-          gap: 2rem;
-          margin-top: 2rem;
-
-          .stat-item {
-            text-align: center;
-
-            .stat-number {
-              font-size: 2.5rem;
-              font-weight: 700;
-              background: linear-gradient(135deg, $gold-accent 0%, $primary-gold-dark 100%);
-              -webkit-background-clip: text;
-              -webkit-text-fill-color: transparent;
-              margin-bottom: 0.5rem;
-            }
-
-            .stat-label {
-              color: #64748b;
-              font-weight: 500;
-            }
-          }
-        }
       }
 
       .story-visual {
@@ -102,9 +77,48 @@ $bg-light: #f5f5f5;            // Light background
         }
       }
     }
+    .story-stats {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 2rem;
+          margin-top: 2rem;
+
+          .stat-item {
+            text-align: center;
+
+            .stat-number {
+              font-size: 2.5rem;
+              font-weight: 700;
+              background: linear-gradient(135deg, $gold-accent 0%, $primary-gold-dark 100%);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              margin-bottom: 0.5rem;
+            }
+
+            .stat-label {
+              color: #64748b;
+              font-weight: 500;
+            }
+          }
+    }
+    .key-content{
+      background: #FFF4C4;
+      color: #895800;
+      padding: 10px;
+      border: 1px dashed #FFD700;
+      border-radius: 10px;
+    }
   }
 
   .values-section {
+    .about-section-title{
+      font-size: 1.5rem;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 20px;
+      color: white;
+      background-clip: text;
+    }
     .values-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -186,12 +200,14 @@ $bg-light: #f5f5f5;            // Light background
         grid-template-columns: 1fr;
         gap: 2rem;
         text-align: center;
-
-        .story-stats {
-          grid-template-columns: repeat(2, 1fr);
-          gap: 1rem;
+        
+        div:nth-child(1) {
+          grid-row: 2;
         }
 
+        div:nth-child(2) {
+          grid-row: 1;
+        }
         .story-visual {
           .visual-placeholder {
             width: 250px;
@@ -200,6 +216,14 @@ $bg-light: #f5f5f5;            // Light background
           }
         }
       }
+      .story-stats {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+      }
+      .key-content{
+        margin-top: 24px;
+        text-align: center;
+    }
     }
 
     .values-section {

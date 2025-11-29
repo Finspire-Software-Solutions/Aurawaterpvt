@@ -22,7 +22,7 @@ export class ProductsComponent implements OnInit {
 allProducts: Product[] = [
     {
       id: 1,
-      name: 'Reverse Osmosis System',
+      name: 'Aqua prime x',
       image: 'assets/images/products/product-1.jpg',
       capacity: '50 GPD',
       filterTime: '6-12 months',
@@ -32,7 +32,7 @@ allProducts: Product[] = [
     },
     {
       id: 2,
-      name: 'UV Water Purifier',
+      name: 'Aqua grand plus',
       image: 'assets/images/products/product-2.jpg',
       capacity: '8L/min',
       filterTime: '12 months',
@@ -42,7 +42,7 @@ allProducts: Product[] = [
     },
     {
       id: 3,
-      name: 'Water Softener',
+      name: 'Cruze',
       image: 'assets/images/products/product-3.jpg',
       capacity: '2000L/day',
       filterTime: '3-5 years',
@@ -52,7 +52,7 @@ allProducts: Product[] = [
     },
     {
       id: 4,
-      name: 'Under Sink Filter',
+      name: 'Cruze',
       image: 'assets/images/products/product-4.jpg',
       capacity: '1500L',
       filterTime: '6 months',
@@ -62,7 +62,7 @@ allProducts: Product[] = [
     },
     {
       id: 5,
-      name: 'Countertop Purifier',
+      name: 'Aqua supreme',
       image: 'assets/images/products/product-5.jpg',
       capacity: '1500L',
       filterTime: '6 months',
@@ -72,37 +72,16 @@ allProducts: Product[] = [
     },
     {
       id: 6,
-      name: 'Whole House Filter',
+      name: 'Hot and cold',
       image: 'assets/images/products/product-6.jpg',
       capacity: '5000L/day',
       filterTime: '12 months',
       description: 'Complete home water filtration solution',
       price: 'LKR 95,000',
       category: 'Filters'
-    },
-    // Add more products here
-    {
-      id: 7,
-      name: 'Commercial RO System',
-      image: 'assets/images/products/product-7.jpg',
-      capacity: '200 GPD',
-      filterTime: '12 months',
-      description: 'High-capacity system for commercial use',
-      price: 'LKR 150,000',
-      category: 'RO Systems'
-    },
-    {
-      id: 8,
-      name: 'Alkaline Water Filter',
-      image: 'assets/images/products/product-8.jpg',
-      capacity: '2000L',
-      filterTime: '6 months',
-      description: 'Adds beneficial minerals and increases pH',
-      price: 'LKR 32,000',
-      category: 'Filters'
-    },   {
-      id: 8,
-      name: 'Alkaline Water Filter',
+    }, {
+      id: 9,
+      name: '125 LPH',
       image: 'assets/images/products/product-9.jpg',
       capacity: '2000L',
       filterTime: '6 months',
@@ -110,8 +89,8 @@ allProducts: Product[] = [
       price: 'LKR 32,000',
       category: 'Filters'
     },   {
-      id: 8,
-      name: 'Alkaline Water Filter',
+      id: 10,
+      name: '50 LPH',
       image: 'assets/images/products/product-10.jpg',
       capacity: '2000L',
       filterTime: '6 months',
@@ -119,8 +98,8 @@ allProducts: Product[] = [
       price: 'LKR 32,000',
       category: 'Filters'
     },   {
-      id: 8,
-      name: 'Alkaline Water Filter',
+      id: 11,
+      name: '1000 LPH Ro System',
       image: 'assets/images/products/product-11.jpg',
       capacity: '2000L',
       filterTime: '6 months',
@@ -128,8 +107,8 @@ allProducts: Product[] = [
       price: 'LKR 32,000',
       category: 'Filters'
     },   {
-      id: 8,
-      name: 'Alkaline Water Filter',
+      id: 12,
+      name: '500 LPH',
       image: 'assets/images/products/product-12.jpg',
       capacity: '2000L',
       filterTime: '6 months',
@@ -137,8 +116,8 @@ allProducts: Product[] = [
       price: 'LKR 32,000',
       category: 'Filters'
     },   {
-      id: 8,
-      name: 'Alkaline Water Filter',
+      id: 13,
+      name: '250 LPH',
       image: 'assets/images/products/product-13.jpg',
       capacity: '2000L',
       filterTime: '6 months',
@@ -146,8 +125,8 @@ allProducts: Product[] = [
       price: 'LKR 32,000',
       category: 'Filters'
     },   {
-      id: 8,
-      name: 'Alkaline Water Filter',
+      id: 15,
+      name: 'Softener System',
       image: 'assets/images/products/product-14.jpg',
       capacity: '2000L',
       filterTime: '6 months',
@@ -155,9 +134,54 @@ allProducts: Product[] = [
       price: 'LKR 32,000',
       category: 'Filters'
     },   {
-      id: 8,
-      name: 'Alkaline Water Filter',
+      id: 16,
+      name: 'Iron removal filter system',
       image: 'assets/images/products/product-15.jpg',
+      capacity: '2000L',
+      filterTime: '6 months',
+      description: 'Adds beneficial minerals and increases pH',
+      price: 'LKR 32,000',
+      category: 'Filters'
+    },   {
+      id: 17,
+      name: 'Opel nexus',
+      image: 'assets/images/products/product-16.jpg',
+      capacity: '2000L',
+      filterTime: '6 months',
+      description: 'Adds beneficial minerals and increases pH',
+      price: 'LKR 32,000',
+      category: 'Filters'
+    },   {
+      id: 18,
+      name: '25 LPH',
+      image: 'assets/images/products/product-17.jpg',
+      capacity: '2000L',
+      filterTime: '6 months',
+      description: 'Adds beneficial minerals and increases pH',
+      price: 'LKR 32,000',
+      category: 'Filters'
+    },   {
+      id: 19,
+      name: 'Hot and cold',
+      image: 'assets/images/products/product-18.jpg',
+      capacity: '2000L',
+      filterTime: '6 months',
+      description: 'Adds beneficial minerals and increases pH',
+      price: 'LKR 32,000',
+      category: 'Filters'
+    },   {
+      id: 20,
+      name: 'Aqua supreme',
+      image: 'assets/images/products/product-19.jpg',
+      capacity: '2000L',
+      filterTime: '6 months',
+      description: 'Adds beneficial minerals and increases pH',
+      price: 'LKR 32,000',
+      category: 'Filters'
+    },   {
+      id: 21,
+      name: 'Alkaline Water Filter',
+      image: 'assets/images/products/product-20.jpg',
       capacity: '2000L',
       filterTime: '6 months',
       description: 'Adds beneficial minerals and increases pH',
