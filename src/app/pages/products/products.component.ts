@@ -3,10 +3,12 @@ interface Product {
   id: number;
   name: string;
   image: string;
-  capacity: string;
+  capacity?: string;
   filterTime: string;
-  description: string;
+  pump?: string;
   price?: string;
+  membrane?: string;
+  filtration?:string;
   category?: string; // Add category for filtering
 }
 @Component({
@@ -21,172 +23,128 @@ export class ProductsComponent implements OnInit {
 
 allProducts: Product[] = [
     {
+      id: 17,
+      name: 'Opel nexus',
+      image: 'assets/images/products/product-16.jpg',
+      capacity: '18 litres',
+      filterTime: '10 LPH',
+      pump: '100 GPD',
+       membrane: '75 GPD',
+      category: 'Filters',
+      filtration:'6'
+    },   {
+      id: 18,
+      name: '25 LPH',
+      image: 'assets/images/products/product-20.jpg',
+      capacity: '28L',
+      filterTime: '25 LPH'
+    },   {
+      id: 19,
+      name: 'Hot and cold',
+      image: 'assets/images/products/product-18.jpg',
+      capacity: '8 litres',
+      filterTime: '10 LPH',
+      pump: '100 GCD',
+       membrane: '75 GCD',
+      category: 'Filters',
+      filtration:'6'
+    },   {
+      id: 20,
+      name: 'Aqua supreme',
+      image: 'assets/images/products/product-19.jpg',
+      capacity: '18 litres',
+      filterTime: '10 LPH',
+      pump: '100 GPD',
+       membrane: '75 GPD',
+      category: 'Filters',
+      filtration:'6'
+    },
+    {
       id: 1,
       name: 'Aqua prime x',
       image: 'assets/images/products/product-1.jpg',
-      capacity: '50 GPD',
-      filterTime: '6-12 months',
-      description: 'Advanced 5-stage purification system for clean drinking water',
-      price: 'LKR 45,000',
-      category: 'RO Systems'
+      capacity: '12 litres',
+      filterTime: '10 LPH',
+      pump: '100 GPD Booster Pump',
+      membrane: '75GPD RO',
+      category: 'RO Systems',
+      filtration:'5 stage'
     },
     {
       id: 2,
       name: 'Aqua grand plus',
       image: 'assets/images/products/product-22.png',
-      capacity: '8L/min',
-      filterTime: '12 months',
-      description: 'Ultraviolet disinfection system that kills bacteria and viruses',
-      price: 'LKR 35,000',
-      category: 'UV Systems'
+      capacity: '18 litres',
+      filterTime: '10 LPH',
+      pump: '100 GCD',
+      membrane: '75 GCD',
+      category: 'UV Systems',
+      filtration:'6'
     },
     {
       id: 3,
-      name: 'Cruze',
+      name: 'Cruze Standard',
       image: 'assets/images/products/product-3.jpg',
-      capacity: '2000L/day',
-      filterTime: '3-5 years',
-      description: 'Remove hardness and protect your appliances',
-      price: 'LKR 75,000',
-      category: 'Softeners'
+      capacity: '10 Litres',
+      filterTime: '10 LPH',
+      pump: '100 GPD',
+       membrane: '75 GPD',
+      category: 'Softeners',
+      filtration:'6'
     },
     {
       id: 4,
       name: 'Cruze',
       image: 'assets/images/products/product-4.jpg',
-      capacity: '1500L',
-      filterTime: '6 months',
-      description: 'Compact filtration system that fits under your kitchen sink',
-      price: 'LKR 25,000',
-      category: 'Filters'
+      capacity: '10 Litres',
+      filterTime: '10 LPH',
+      pump: '100 GPD',
+       membrane: '75 GPD',
+      category: 'Filters',
+      filtration:'7'
     },
     {
-      id: 5,
-      name: 'Aqua supreme',
-      image: 'assets/images/products/product-5.jpg',
-      capacity: '1500L',
-      filterTime: '6 months',
-      description: 'Portable water purification for any countertop',
-      price: 'LKR 28,000',
-      category: 'Filters'
-    },
-    {
-      id: 6,
-      name: 'Hot and cold',
-      image: 'assets/images/products/product-6.jpg',
-      capacity: '5000L/day',
-      filterTime: '12 months',
-      description: 'Complete home water filtration solution',
-      price: 'LKR 95,000',
-      category: 'Filters'
-    }, {
       id: 9,
       name: '125 LPH',
       image: 'assets/images/products/product-9.jpg',
-      capacity: '2000L',
-      filterTime: '6 months',
-      description: 'Adds beneficial minerals and increases pH',
-      price: 'LKR 32,000',
-      category: 'Filters'
-    },   {
+      capacity: '500L',
+      filterTime: '125 LPH',
+      },   {
       id: 10,
       name: '50 LPH',
       image: 'assets/images/products/product-10.jpg',
-      capacity: '2000L',
-      filterTime: '6 months',
-      description: 'Adds beneficial minerals and increases pH',
-      price: 'LKR 32,000',
-      category: 'Filters'
+      capacity: '28L',
+      filterTime: '50 LPH',
+      
     },   {
       id: 11,
       name: '1000 LPH Ro System',
       image: 'assets/images/products/product-11.jpg',
-      capacity: '2000L',
-      filterTime: '6 months',
-      description: 'Adds beneficial minerals and increases pH',
-      price: 'LKR 32,000',
-      category: 'Filters'
+      capacity: '1000L',
+      filterTime: '1000 LPH',
+      
     },   {
       id: 12,
       name: '500 LPH',
       image: 'assets/images/products/product-12.jpg',
-      capacity: '2000L',
-      filterTime: '6 months',
-      description: 'Adds beneficial minerals and increases pH',
-      price: 'LKR 32,000',
-      category: 'Filters'
+      capacity: '1000L',
+      filterTime: '500 LPH'
     },   {
       id: 13,
       name: '250 LPH',
       image: 'assets/images/products/product-13.jpg',
-      capacity: '2000L',
-      filterTime: '6 months',
-      description: 'Adds beneficial minerals and increases pH',
-      price: 'LKR 32,000',
-      category: 'Filters'
+      capacity: '1000L',
+      filterTime: '250 LPH'
     },   {
       id: 15,
       name: 'Softener System',
       image: 'assets/images/products/product-14.jpg',
-      capacity: '2000L',
-      filterTime: '6 months',
-      description: 'Adds beneficial minerals and increases pH',
-      price: 'LKR 32,000',
-      category: 'Filters'
+      filterTime: '2500 LPD'
     },   {
       id: 16,
       name: 'Iron removal filter system',
       image: 'assets/images/products/product-15.jpg',
-      capacity: '2000L',
-      filterTime: '6 months',
-      description: 'Adds beneficial minerals and increases pH',
-      price: 'LKR 32,000',
-      category: 'Filters'
-    },   {
-      id: 17,
-      name: 'Opel nexus',
-      image: 'assets/images/products/product-16.jpg',
-      capacity: '2000L',
-      filterTime: '6 months',
-      description: 'Adds beneficial minerals and increases pH',
-      price: 'LKR 32,000',
-      category: 'Filters'
-    },   {
-      id: 18,
-      name: '25 LPH',
-      image: 'assets/images/products/product-17.jpg',
-      capacity: '2000L',
-      filterTime: '6 months',
-      description: 'Adds beneficial minerals and increases pH',
-      price: 'LKR 32,000',
-      category: 'Filters'
-    },   {
-      id: 19,
-      name: 'Hot and cold',
-      image: 'assets/images/products/product-18.jpg',
-      capacity: '2000L',
-      filterTime: '6 months',
-      description: 'Adds beneficial minerals and increases pH',
-      price: 'LKR 32,000',
-      category: 'Filters'
-    },   {
-      id: 20,
-      name: 'Aqua supreme',
-      image: 'assets/images/products/product-19.jpg',
-      capacity: '2000L',
-      filterTime: '6 months',
-      description: 'Adds beneficial minerals and increases pH',
-      price: 'LKR 32,000',
-      category: 'Filters'
-    },   {
-      id: 21,
-      name: 'Alkaline Water Filter',
-      image: 'assets/images/products/product-20.jpg',
-      capacity: '2000L',
-      filterTime: '6 months',
-      description: 'Adds beneficial minerals and increases pH',
-      price: 'LKR 32,000',
-      category: 'Filters'
+      filterTime: '2500 LPD'
     }
   ];
 
@@ -235,8 +193,7 @@ allProducts: Product[] = [
       
       // Search filter
       const searchMatch = this.searchTerm === '' || 
-                         product.name.toLowerCase().includes(this.searchTerm.toLowerCase()) ||
-                         product.description.toLowerCase().includes(this.searchTerm.toLowerCase());
+                         product.name.toLowerCase().includes(this.searchTerm.toLowerCase());
       
       return categoryMatch && priceMatch && searchMatch;
     });
@@ -274,9 +231,11 @@ allProducts: Product[] = [
 *${product.name}*
 - Capacity: ${product.capacity}
 - Filter Time: ${product.filterTime}
-${product.price ? `- Price: ${product.price}` : ''}
+${product.pump ? `- pump: ${product.pump}` : ''}
+${product.membrane ? `- membrane: ${product.membrane}` : ''}
+${product.filtration ? `- filtration: ${product.filtration}` : ''}
 
-${product.description}
+${product.category}
 
 Could you please provide more information?`;
 

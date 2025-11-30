@@ -70,7 +70,6 @@
           
           <div class="product-overlay">
             <h3 class="product-title">{{ product.name }}</h3>
-            
             <div class="product-details">
               <div class="detail-row">
                 <span class="detail-label">Capacity:</span>
@@ -80,6 +79,18 @@
               <div class="detail-row">
                 <span class="detail-label">Filter Time:</span>
                 <span class="detail-value">{{ product.filterTime }}</span>
+              </div>
+              <div class="detail-row" *ngIf="product.pump">
+                <span class="detail-label">Pump:</span>
+                <span class="detail-value">{{ product.pump }}</span>
+              </div>
+              <div class="detail-row"  *ngIf="product.membrane">
+                <span class="detail-label">Membrane:</span>
+                <span class="detail-value">{{ product.membrane }}</span>
+              </div>
+              <div class="detail-row"  *ngIf="product.filtration">
+                <span class="detail-label">Filtration:</span>
+                <span class="detail-value">{{ product.filtration }}</span>
               </div>
             </div>
           </div>
