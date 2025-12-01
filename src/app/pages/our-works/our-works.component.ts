@@ -15,7 +15,8 @@ interface GalleryImage {
   description: string;
   location: string;
   date: string;
-  category: string; // e.g., 'Residential', 'Commercial', 'Industrial'
+  category: string;
+  slug?: string;
 }
 
 @Component({
@@ -70,61 +71,35 @@ export class OurWorksComponent implements OnInit {
   loadGalleryImages(): void {
     // Sample gallery data - replace with actual API call
     this.galleryImages = [
-      {
-        id: 1,
-        image: 'assets/images/gallery/install-1.png',
-        title: 'RO System Installation - Colombo Residence',
-        description: 'Complete 7-stage reverse osmosis system installed for a luxury apartment in Colombo 7. The system includes pre-filters, RO membrane, post carbon filter, and mineralization stage.',
-        location: 'Colombo 7',
-        date: '2025-01-15',
-        category: 'Residential'
-      },
-      {
-        id: 2,
-        image: 'assets/images/gallery/install-2.png',
-        title: 'Commercial Water Treatment - Hotel Project',
-        description: 'Industrial-grade water purification system for a 5-star hotel including central filtration, softener, and point-of-use RO units in all rooms.',
-        location: 'Galle Face, Colombo',
-        date: '2025-01-10',
-        category: 'Commercial'
-      },
-      {
-        id: 3,
-        image: 'assets/images/gallery/install-3.png',
-        title: 'Whole House Filtration - Negombo Villa',
-        description: 'Complete whole house water treatment system with sediment filter, carbon filter, and UV sterilization protecting all water outlets.',
-        location: 'Negombo',
-        date: '2024-12-28',
-        category: 'Residential'
-      },
-      {
-        id: 4,
-        image: 'assets/images/gallery/install-4.png',
-        title: 'Restaurant Kitchen Installation',
-        description: 'High-capacity RO system for restaurant kitchen use, ensuring pure water for cooking and ice making. Includes dedicated lines for drinking water dispensers.',
-        location: 'Kandy',
-        date: '2024-12-20',
-        category: 'Commercial'
-      },
-      {
-        id: 5,
-        image: 'assets/images/gallery/install-5.png',
-        title: 'Industrial Water System - Factory',
-        description: 'Large-scale water treatment plant for manufacturing facility requiring high-purity water for production processes.',
-        location: 'Katunayake EPZ',
-        date: '2024-12-15',
-        category: 'Industrial'
-      },
-      {
-        id: 6,
-        image: 'assets/images/gallery/install-6.jpg',
-        title: 'Under-Sink RO Unit - Modern Kitchen',
-        description: 'Compact under-sink RO system with dedicated designer faucet, perfect for modern kitchens with limited space.',
-        location: 'Mount Lavinia',
-        date: '2024-12-10',
-        category: 'Residential'
-      }
-    ];
+  {
+    id: 1,
+    image: 'assets/images/projects/auraWorks_1.png',
+    title: 'Aqua Supreme Installation',
+    description: 'Complete installation of the Aqua Supreme purification system designed to provide high-quality filtered water for residential use.',
+    location: 'Jaffna',
+    date: '2025-11-15',
+    category: 'Residential',
+    slug: 'aqua-supreme-installation'
+  },
+  {
+    id: 2,
+    image: 'assets/images/projects/auraWorks_3.png',
+    title: 'Residential Water Purification',
+    description: 'Setup of an advanced residential water purification unit ensuring safe, clean, and reliable water for daily household needs.',
+    location: 'Jaffna',
+    date: '2025-11-10',
+    category: 'Commercial'
+  },
+{
+  id: 3,
+  image: 'assets/images/projects/auraWorks_4.png',
+  title: 'Residential Water Purification',
+  description: 'Installation of a reliable residential water purification system designed to deliver clean, safe, and purified water for household use.',
+  location: 'Jaffna',
+  date: '2024-12-28',
+  category: 'Residential'
+}
+];
 
     this.loadGalleryCategories();
   }
