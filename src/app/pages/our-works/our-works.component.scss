@@ -41,7 +41,7 @@ $bg-light: #f5f5f5;            // Light background
       gap: 1rem;
 
       i {
-        color: #667eea;
+        color: #ffa200;
       }
     }
 
@@ -82,9 +82,9 @@ $bg-light: #f5f5f5;            // Light background
   }
 
   &.active {
-    background: $primary-gold;
-    border-color: $primary-gold-dark;
-    color: $white;
+    background: $primary-gold-light;
+    border-color: $primary-gold-light;
+    color: $text-dark;
   }
 }
 
@@ -170,7 +170,7 @@ $bg-light: #f5f5f5;            // Light background
 
             .tech-tag {
               background: #f1f5f9;
-              color: #667eea;
+              color: #ffa200;
               padding: 0.25rem 0.75rem;
               border-radius: 12px;
               font-size: 0.8rem;
@@ -286,7 +286,7 @@ $bg-light: #f5f5f5;            // Light background
               gap: 0.3rem;
 
               i {
-                color: #667eea;
+                color: #ffa200;
               }
             }
           }
@@ -361,7 +361,7 @@ $bg-light: #f5f5f5;            // Light background
             font-size: 0.95rem;
 
             i {
-              color: #667eea;
+              color: #ffa200;
               width: 20px;
             }
           }
@@ -526,7 +526,7 @@ $bg-light: #f5f5f5;            // Light background
 .link-button {
   background: transparent;
   border: none;
-  color: #ff8606;
+  color: #ffa200;
   font-weight: 600;
   cursor: pointer;
   padding: 0;
@@ -590,7 +590,7 @@ $bg-light: #f5f5f5;            // Light background
   &:hover {
     background: white;
     transform: rotate(90deg) scale(1.1);
-    color: #667eea;
+    color: #ffa200;
   }
 }
 

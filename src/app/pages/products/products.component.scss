@@ -173,18 +173,16 @@
         right: 15px;
         width: 50px;
         height: 50px;
-        background: linear-gradient(135deg, #ffd700 0%, #c0c0c0 100%);
+        background: linear-gradient( #FFF4C4 100%);
         border-radius: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
         z-index: 2;
-        box-shadow: 0 4px 12px rgba(255, 215, 0, 0.5);
         transition: all 0.3s ease;
-        border: 2px solid #ffffff;
 
         i {
-          color: #000000;
+          color: #64748b;
           font-size: 1.5rem;
         }
       }

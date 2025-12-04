@@ -24,14 +24,12 @@
 @media (max-width: 992px) {
   .logo-container img {
     height: 81px;
-    overflow: visible !important;
   }
 }
 // Mobile view
 @media (max-width: 768px) {
   .logo-container img {
     height: 81px;
-    overflow: visible !important;
   }
 }
 
@@ -39,7 +37,6 @@
 @media (max-width: 480px) {
   .logo-container img {
     height: 81px;
-    overflow: visible !important;
   }
 }
 
@@ -53,7 +50,7 @@
 	position: absolute;
 	transform: translate(-50%, -50%);
   left: 40px;
-  top: 14px;
+  top: 13px;
 }
 
 .content h2:nth-child(1) {
@@ -62,7 +59,7 @@
 }
 
 .content h2:nth-child(2) {
-	color: #39b0ff;
+	color: #FFF4C4;
 	animation: animate 4s ease-in-out infinite;
 }
 

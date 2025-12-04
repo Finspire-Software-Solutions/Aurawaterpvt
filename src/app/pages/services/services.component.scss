@@ -48,16 +48,17 @@
           .service-icon {
             width: 60px;
             height: 60px;
-            background: linear-gradient(135deg, #FFD700 0%, #FFF4C4 100%);
+            // background: linear-gradient(135deg, #FFD700 0%, #FFF4C4 100%);
             border-radius: 12px;
             display: flex;
             align-items: center;
             justify-content: center;
             margin-right: 1rem;
+            border: 1px dashed #ffa200;
 
             i {
               font-size: 1.5rem;
-              color: white;
+              color: #ffa200;
             }
           }
 

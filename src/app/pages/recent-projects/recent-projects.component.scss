@@ -116,9 +116,9 @@ $category-white: #ffffff;
   }
 
   &.active {
-    background: $primary-gold;
-    border-color: $primary-gold-dark;
-    color: $white;
+    background: $primary-gold-light;
+    border-color: $primary-gold-light;
+    color: $text-dark;
   }
 }
 

@@ -155,7 +155,7 @@ $bg-light: #f5f5f5;            // Light background
 
               i {
                 font-size: 1.2rem;
-                color: white;
+                color: #64748b;
               }
             }
 
@@ -209,7 +209,6 @@ $bg-light: #f5f5f5;            // Light background
 
               &:hover {
                 background: linear-gradient(135deg, $primary-gold 0%, $primary-gold-light 100%);
-                color: white;
                 transform: translateY(-2px);
               }
 
