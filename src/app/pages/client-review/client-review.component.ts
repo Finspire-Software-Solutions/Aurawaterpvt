@@ -15,61 +15,62 @@ interface Review {
 export class ClientReviewComponent {
 reviews: Review[] = [
     {
-      id: 1,
-      name: 'Sanjay Kumar',
-      location: 'Kilinochchi',
-      image: 'assets/images/reviews/client-1.png',
-      rating: 5,
-      review: 'Aura Water Management installed an RO system in our home and the difference in water quality is remarkable. The team was professional, punctual, and explained everything clearly. Highly recommended!'
-    },
-    {
-      id: 2,
-      name: 'Lakshmi Devi',
-      location: 'Mullaitivu',
-      image: 'assets/images/reviews/client-4.png',
-      rating: 5,
-      review: 'Aura installed water purifiers across our school campus. The children now have access to safe drinking water. Their team is responsive and the after-sales service is excellent.'
-    },
-    {
-      id: 3,
-      name: 'Priya Selvam',
-      location: 'Jaffna',
-      image: 'assets/images/reviews/client-2.png',
-      rating: 5,
-      review: 'We needed a commercial water purification system for our restaurant. Aura provided an excellent solution within our budget. Their 24/7 support has been invaluable for our business operations.'
-    },
-    {
-      id: 4,
-      name: 'Mohamed Rizwan',
-      location: 'Vavuniya',
-      image: 'assets/images/reviews/client-3.png',
-      rating: 5,
-      review: 'Outstanding service from start to finish. The water testing they conducted helped us understand our needs better. The installation was seamless and the maintenance service is top-notch.'
-    },
-    {
-      id: 5,
-      name: 'Deshan Pathirana',
-      location: 'Vavuniya',
-      image: 'assets/images/reviews/client-4.png',
-      rating: 5,
-      review: 'Aura installed water purifiers across our school campus. The children now have access to safe drinking water. Their team is responsive and the after-sales service is excellent.'
-    },
-    {
-      id: 6,
-      name: 'Ashoka Ranaweera',
-      location: 'Mullaitivu',
-      image: 'assets/images/reviews/client-4.png',
-      rating: 5,
-      review: 'Aura installed water purifiers across our school campus. The children now have access to safe drinking water. Their team is responsive and the after-sales service is excellent.'
-    },
-    {
-      id: 6,
-      name: 'Mohammed Kahan',
-      location: 'Tringomale',
-      image: 'assets/images/reviews/client-4.png',
-      rating: 5,
-      review: 'Aura installed water purifiers across our school campus. The children now have access to safe drinking water. Their team is responsive and the after-sales service is excellent.'
-    }
+  id: 1,
+  name: 'Sanjay Kumar',
+  location: 'Kilinochchi',
+  image: 'assets/images/reviews/client-1.png',
+  rating: 5,
+  review: 'Aura Water Management installed an RO system in our home, and the improvement in water quality was immediate. Their team was efficient, knowledgeable, and very courteous throughout the process.'
+},
+{
+  id: 2,
+  name: 'Lakshmi Devi',
+  location: 'Mullaitivu',
+  image: 'assets/images/reviews/client-4.png',
+  rating: 5,
+  review: 'எங்கள் அலுவலகத்தில் குடிநீர் அமைப்பை மேம்படுத்த நாங்கள் ஆராவைத் தேர்ந்தெடுத்தோம். அவர்களின் குழு திறமையாக வேலை செய்தது.'
+},
+{
+  id: 3,
+  name: 'Priya Selvam',
+  location: 'Jaffna',
+  image: 'assets/images/reviews/client-2.png',
+  rating: 5,
+  review: 'Aura provided a reliable commercial purification system for our restaurant. The system works flawlessly, and their technical support has been outstanding from day one.'
+},
+{
+  id: 4,
+  name: 'Mohamed Rizwan',
+  location: 'Vavuniya',
+  image: 'assets/images/reviews/client-3.png',
+  rating: 5,
+  review: 'Their water testing service helped us understand our exact requirements before installation. The entire process was smooth, and the final setup exceeded our expectations.'
+},
+{
+  id: 5,
+  name: 'Deshan Pathirana',
+  location: 'Vavuniya',
+  image: 'assets/images/reviews/client-4.png',
+  rating: 5,
+  review: 'We installed a purifier system for our office, and the results have been excellent. The team was friendly, skilled, and completed the job with zero disruptions to our workday.'
+},
+{
+  id: 6,
+  name: 'Ashoka Ranaweera',
+  location: 'Mullaitivu',
+  image: 'assets/images/reviews/client-4.png',
+  rating: 5,
+  review: 'Aura’s technicians were very professional and explained every step clearly. Their product quality is impressive, and the ongoing maintenance service has been extremely reliable.'
+},
+{
+  id: 7,
+  name: 'Mohammed Kahan',
+  location: 'Trincomalee',
+  image: 'assets/images/reviews/client-4.png',
+  rating: 5,
+  review: 'எங்கள் வீட்டில் நிறுவப்பட்ட சுத்திகரிப்பு அமைப்பில் நான் மிகவும் திருப்தி அடைகிறேன். தண்ணீர் சுவை நன்றாக இருக்கிறது.'
+}
+
   ];
 
   currentIndex = 0;
