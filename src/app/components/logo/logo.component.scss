@@ -2,11 +2,13 @@
   display: flex;
   align-items: center;
   height: 50px;
+  overflow: visible !important;
   img {
     height: 81px; // Default height for desktop
     width: auto; // Maintain aspect ratio
     max-width: 100%; // Ensure it's responsive
     object-fit: contain; // Ensure the image maintains its aspect ratio
+    overflow: visible !important;
   }
   span{
       background: linear-gradient(#ffffff, #a8a4a7,#ffffff, #ffffff);
@@ -22,12 +24,14 @@
 @media (max-width: 992px) {
   .logo-container img {
     height: 81px;
+    overflow: visible !important;
   }
 }
 // Mobile view
 @media (max-width: 768px) {
   .logo-container img {
     height: 81px;
+    overflow: visible !important;
   }
 }
 
@@ -35,6 +39,7 @@
 @media (max-width: 480px) {
   .logo-container img {
     height: 81px;
+    overflow: visible !important;
   }
 }
 

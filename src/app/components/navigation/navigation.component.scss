@@ -8,11 +8,12 @@
   right: 0;
   z-index: 1000;
   padding: 1rem 0;
-
+  overflow: visible !important;
   .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    overflow: visible !important;
   }
 
   .navbar-brand {
@@ -20,6 +21,7 @@
     align-items: flex-start;
     flex-direction: row;
     justify-content: center;
+    overflow: visible !important;
 
     .title-div {
       display: flex;
@@ -35,6 +37,7 @@
       color: #1a202c;
       font-weight: 700;
       font-size: 1.5rem;
+      overflow: visible !important;
     }
 
     .company-name {
@@ -179,6 +182,7 @@
 
 @media (max-width: 768px) {
   .navbar {
+    top: 55px;
     .navbar-toggle {
       display: flex;
     }
