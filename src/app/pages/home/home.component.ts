@@ -60,32 +60,32 @@ export class HomeComponent implements OnInit, AfterViewInit {
   blogs: Blog[] = [
     {
       id: 1,
-      title: 'Why RO Water Purifiers Are Essential for Every Home',
-      image: 'assets/images/blog/blog-1.jpg',
+      title: 'Understanding Reverse Osmosis: The Gold Standard in Water Purification',
+      image: 'assets/images/blog/blog-11.webp',
       author: 'Aura Team',
       date: 'November 15, 2025',
       category: 'Water Purification',
-      excerpt: 'Discover the importance of RO water purifiers in ensuring safe, clean drinking water for your family. Learn about the technology behind reverse osmosis.',
+      excerpt: "Understanding Reverse Osmosis: The Gold Standard in Water Purification",
       slug: 'whole-house-water-filtration'
     },
     {
       id: 2,
-      title: '5 Signs Your Water Filter Needs Replacement',
-      image: 'assets/images/blog/blog-2.jpg',
+      title: 'Water Quality Challenges in Sri Lanka: A 2025 Perspective',
+      image: 'assets/images/blog/blog-10.webp',
       author: 'Aura Team',
       date: 'November 10, 2025',
       category: 'Maintenance',
-      excerpt: 'Regular filter replacement is crucial for maintaining water quality. Here are the key signs that indicate its time to change your water filter.',
+      excerpt: 'An in-depth look at the current state of water quality across different regions of Sri Lanka.',
       slug: 'water-filter-replacement-signs'
     },
     {
       id: 3,
-      title: 'Understanding TDS Levels in Drinking Water',
-      image: 'assets/images/blog/blog-3.jpg',
+      title: 'Essential Maintenance Tips for Your Water Purifier',
+      image: 'assets/images/blog/blog-12.webp',
       author: 'Aura Team',
       date: 'November 5, 2025',
       category: 'Water Quality',
-      excerpt: 'Total Dissolved Solids (TDS) is an important measure of water quality. Learn what TDS levels mean and how they affect your health.',
+      excerpt: 'Learn how to keep your water purification system running efficiently with these simple maintenance practices.',
       slug: 'water-purification-for-businesses'
     }
   ];
