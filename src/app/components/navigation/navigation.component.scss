@@ -185,7 +185,6 @@
     .navbar-toggle {
       display: flex;
     }
-
     .navbar-menu {
       position: absolute;
       top: 100%;
@@ -203,7 +202,6 @@
         opacity: 1;
         visibility: visible;
       }
-
       .navbar-nav {
         flex-direction: column;
         padding: 1rem;
@@ -217,7 +215,6 @@
             padding: 1rem;
             border-bottom: 1px solid #333;
           }
-
           &.dropdown {
             .dropdown-menu {
               position: static;
@@ -240,7 +237,6 @@
                 border-bottom: 1px solid #222;
               }
             }
-
             .arrow-icon {
               margin-left: auto;
             }
