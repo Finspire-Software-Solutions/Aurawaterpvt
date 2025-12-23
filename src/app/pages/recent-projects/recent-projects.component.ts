@@ -23,7 +23,7 @@ projects: Project[] = [
       category: 'Residential',
       categorySlug: 'residential',
       location: 'Jaffna',
-      image: 'assets/images/projects/auraWorks_4.png',
+      image: 'https://res.cloudinary.com/dszgwsh5a/image/upload/v1766466735/Aura_Water_Management-recentProject1_x4hhtb.png',
       description: 'Installed a high-capacity RO plant serving 500+ beds with 99.9% pure water output.',
       features: ['18 litres', '10 LPH Filter Time', '100 GPD Pump', '75 GPD Membrane', '6 Filters'],
       slug: 'aqua-supreme-installation'
@@ -34,7 +34,7 @@ projects: Project[] = [
       category: 'Residential',
       categorySlug: 'residential',
       location: 'Jaffna',
-      image: 'assets/images/projects/auraWorks_1.png',
+      image: 'https://res.cloudinary.com/dszgwsh5a/image/upload/v1766466735/Aura_Water_Management-recentProject2_qxuvkw.png',
       description: 'Installed a high-capacity RO plant serving 500+ beds with 99.9% pure water output.',
       features: ['18 litres', '10 LPH Filter Time', '100 GPD Pump', '75 GPD Membrane', '6 Filters'],
       slug: 'jaffna-hospital-ro-plant'
@@ -45,7 +45,7 @@ projects: Project[] = [
       category: 'Residential',
       categorySlug: 'residential',
       location: 'Jaffna',
-      image: 'assets/images/projects/auraWorks_3.png',
+      image: 'https://res.cloudinary.com/dszgwsh5a/image/upload/v1766466736/Aura_Water_Management-recentProject3_amuj1m.png',
       description: 'Large-scale water treatment plant for industrial processing and waste water management.',
       features: ['28L', '25 LPH Filter Time'],
       slug: 'vavuniya-textile-treatment'

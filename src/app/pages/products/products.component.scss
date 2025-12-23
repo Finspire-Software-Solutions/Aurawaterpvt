@@ -96,9 +96,9 @@
 
       .clear-filters-btn {
         padding: 12px 24px;
-        background: linear-gradient(135deg, #FFF4C4 0%, #FFF4C4 100%);
-        color: #ffffff;
-        border: none;
+        background: linear-gradient(135deg, #FFF4C4 0%, #FFD700 100%);
+        color: #1a1a1a;
+        border: 1px solid #DAA520;
         border-radius: 8px;
         font-weight: 600;
         cursor: pointer;
@@ -111,6 +111,7 @@
         &:hover {
           transform: translateY(-2px);
           box-shadow: 0 4px 15px rgba(255, 68, 68, 0.4);
+          background: linear-gradient(135deg, #FFD700 0%, #DAA520 100%);
         }
 
         &:active {

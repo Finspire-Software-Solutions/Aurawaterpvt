@@ -38,7 +38,7 @@ allProducts: Product[] = [
     {
       id: 17,
       name: 'Opel nexus',
-      image: 'assets/images/products/product-16.jpg',
+      image: 'https://res.cloudinary.com/dszgwsh5a/image/upload/v1766469677/Aurawater_product2_Opel_nexus_k3io6d.jpg',
       capacity: '18 litres',
       filterTime: '10 LPH',
       pump: '100 GPD',
@@ -48,13 +48,13 @@ allProducts: Product[] = [
     },   {
       id: 18,
       name: '25 LPH',
-      image: 'assets/images/products/product-20.jpg',
+      image: 'https://res.cloudinary.com/dszgwsh5a/image/upload/v1766469805/Aurawater_product3_25_LPH_ucqovo.jpg',
       capacity: '28L',
       filterTime: '25 LPH'
     },   {
       id: 19,
       name: 'Hot and cold',
-      image: 'assets/images/products/product-18.jpg',
+      image: 'https://res.cloudinary.com/dszgwsh5a/image/upload/v1766469870/Aurawater_product4_Hot_and_cold_qmhnsz.jpg',
       capacity: '8 litres',
       filterTime: '10 LPH',
       pump: '100 GCD',
@@ -64,7 +64,7 @@ allProducts: Product[] = [
     },   {
       id: 20,
       name: 'Aqua supreme',
-      image: 'assets/images/products/product-19.jpg',
+      image: 'https://res.cloudinary.com/dszgwsh5a/image/upload/v1766469960/Aurawater_product6_Aqua_supreme_ve3kie.jpg',
       capacity: '18 litres',
       filterTime: '10 LPH',
       pump: '100 GPD',
@@ -75,7 +75,7 @@ allProducts: Product[] = [
     {
       id: 1,
       name: 'Aqua prime x',
-      image: 'assets/images/products/product-1.jpg',
+      image: 'https://res.cloudinary.com/dszgwsh5a/image/upload/v1766469438/AuraWater_Opel_nexus_mlta18.jpg',
       capacity: '12 litres',
       filterTime: '10 LPH',
       pump: '100 GPD Booster Pump',
@@ -86,7 +86,7 @@ allProducts: Product[] = [
     {
       id: 2,
       name: 'Aqua grand plus',
-      image: 'assets/images/products/product-22.png',
+      image: 'https://res.cloudinary.com/dszgwsh5a/image/upload/v1766470444/Aurawater_product7_Aqua_grand_plus_aa33uh.png',
       capacity: '18 litres',
       filterTime: '10 LPH',
       pump: '100 GCD',
@@ -97,7 +97,7 @@ allProducts: Product[] = [
     {
       id: 3,
       name: 'Cruze Standard',
-      image: 'assets/images/products/product-3.jpg',
+      image: 'https://res.cloudinary.com/dszgwsh5a/image/upload/v1766470565/Aurawater_product8_Cruze_Standard_mbtnmj.jpg',
       capacity: '10 Litres',
       filterTime: '10 LPH',
       pump: '100 GPD',
@@ -108,7 +108,7 @@ allProducts: Product[] = [
     {
       id: 4,
       name: 'Cruze',
-      image: 'assets/images/products/product-4.jpg',
+      image: 'https://res.cloudinary.com/dszgwsh5a/image/upload/v1766470680/Aurawater_product8_Cruze_z8nr8x.jpg',
       capacity: '10 Litres',
       filterTime: '10 LPH',
       pump: '100 GPD',
@@ -119,44 +119,44 @@ allProducts: Product[] = [
     {
       id: 9,
       name: '125 LPH',
-      image: 'assets/images/products/product-9.jpg',
+      image: 'https://res.cloudinary.com/dszgwsh5a/image/upload/v1766470751/Aurawater_product10_125_LPH_udjnwy.jpg',
       capacity: '500L',
       filterTime: '125 LPH',
       },   {
       id: 10,
       name: '50 LPH',
-      image: 'assets/images/products/product-10.jpg',
+      image: 'https://res.cloudinary.com/dszgwsh5a/image/upload/v1766470856/Aurawater_product11_50_LPH_nvd1os.jpg',
       capacity: '28L',
       filterTime: '50 LPH',
       
     },   {
       id: 11,
       name: '1000 LPH Ro System',
-      image: 'assets/images/products/product-11.jpg',
+      image: 'https://res.cloudinary.com/dszgwsh5a/image/upload/v1766470905/Aurawater_product12_1000_LPH_Ro_System_xcd9ja.jpg',
       capacity: '1000L',
       filterTime: '1000 LPH',
       
     },   {
       id: 12,
       name: '500 LPH',
-      image: 'assets/images/products/product-12.jpg',
+      image: 'https://res.cloudinary.com/dszgwsh5a/image/upload/v1766470951/Aurawater_product13_50_LPH_eyseac.jpg',
       capacity: '1000L',
       filterTime: '500 LPH'
     },   {
       id: 13,
       name: '250 LPH',
-      image: 'assets/images/products/product-13.jpg',
+      image: 'https://res.cloudinary.com/dszgwsh5a/image/upload/v1766471011/Aurawater_product14_250LPH_wdift5.jpg',
       capacity: '1000L',
       filterTime: '250 LPH'
     },   {
       id: 15,
       name: 'Softener System',
-      image: 'assets/images/products/product-14.jpg',
+      image: 'https://res.cloudinary.com/dszgwsh5a/image/upload/v1766471097/Aurawater_product15_Softener_System_dwliwv.jpg',
       filterTime: '2500 LPD'
     },   {
       id: 16,
       name: 'Iron removal filter system',
-      image: 'assets/images/products/product-15.jpg',
+      image: 'https://res.cloudinary.com/dszgwsh5a/image/upload/v1766471101/Aurawater_product16_Iron_removal_filter_system_g7uaix.jpg',
       filterTime: '2500 LPD'
     }
   ];

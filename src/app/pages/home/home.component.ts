@@ -61,7 +61,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
     {
       id: 1,
       title: 'Understanding Reverse Osmosis: The Gold Standard in Water Purification',
-      image: 'assets/images/blog/blog-11.webp',
+      image: 'https://res.cloudinary.com/dszgwsh5a/image/upload/v1766465889/Aurawater-blog1_suukur.webp',
       author: 'Aura Team',
       date: 'November 15, 2025',
       category: 'Water Purification',
@@ -71,7 +71,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
     {
       id: 2,
       title: 'Water Quality Challenges in Sri Lanka: A 2025 Perspective',
-      image: 'assets/images/blog/blog-10.webp',
+      image: 'https://res.cloudinary.com/dszgwsh5a/image/upload/v1766465888/Aurawater-blog2_msmtem.webp',
       author: 'Aura Team',
       date: 'November 10, 2025',
       category: 'Maintenance',
@@ -81,7 +81,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
     {
       id: 3,
       title: 'Essential Maintenance Tips for Your Water Purifier',
-      image: 'assets/images/blog/blog-12.webp',
+      image: 'https://res.cloudinary.com/dszgwsh5a/image/upload/v1766465887/Aurawater-blog3_pzdff0.webp',
       author: 'Aura Team',
       date: 'November 5, 2025',
       category: 'Water Quality',
