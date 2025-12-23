@@ -12,12 +12,6 @@
     text-align: center;
     margin-bottom: 60px;
 
-    .section-title {
-      font-size: 2rem;
-      margin-bottom: 15px;
-      color: #000000;
-    }
-
     .section-subtitle {
       font-size: 1.1rem;
       margin-top: 10px;
@@ -102,7 +96,7 @@
 
       .clear-filters-btn {
         padding: 12px 24px;
-        background: linear-gradient(135deg, #ff4444 0%, #cc0000 100%);
+        background: linear-gradient(135deg, #FFF4C4 0%, #FFF4C4 100%);
         color: #ffffff;
         border: none;
         border-radius: 8px;
@@ -316,9 +310,6 @@
     padding: 60px 0;
 
     .section-header {
-      .section-title {
-        font-size: 2rem;
-      }
 
       .section-subtitle {
         font-size: 1rem;

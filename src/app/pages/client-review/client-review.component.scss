@@ -368,7 +368,8 @@ $off-white: #fafafa;            // Off-white
   align-items: center;
   gap: 1rem;
   @media (max-width: 388px) {
-    gap: 0rem;
+    gap: 1rem;
+    width: 60%;
   }
 }
 

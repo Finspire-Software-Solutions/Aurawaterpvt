@@ -11,6 +11,13 @@ interface Product {
   filtration?:string;
   category?: string; // Add category for filtering
 }
+interface Bubble {
+  id: number;
+  size: number;
+  left: number;
+  duration: number;
+  delay: number;
+}
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
@@ -20,6 +27,12 @@ export class ProductsComponent implements OnInit {
   @Input() limitProducts: number = 0; // 0 means show all, any number limits display
   @Input() showFilters: boolean = true; // Show/hide filters
   @Input() showViewAll: boolean = false; // Show "View All" button on home
+  @Input() title: string = 'Our Products';
+  @Input() subtitle: string = '';
+  @Input() breadcrumbs: { label: string; link?: string }[] = [];
+
+  bubbles: Bubble[] = [];
+  ripples = [0, 1, 2];
 
 allProducts: Product[] = [
     {
